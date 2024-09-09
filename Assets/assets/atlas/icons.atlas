@@ -1,0 +1,435 @@
+
+icons.png
+size: 4096, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+bg_item_background
+  rotate: false
+  xy: 1643, 146
+  size: 62, 62
+  split: 24, 24, 24, 24
+  pad: 0, 0, 0, 0
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+ic_achievement_destroy_bronze
+  rotate: false
+  xy: 2088, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_destroy_gold
+  rotate: false
+  xy: 789, 70
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_destroy_silver
+  rotate: false
+  xy: 2219, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_rocket_bronze
+  rotate: false
+  xy: 2350, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_rocket_gold
+  rotate: false
+  xy: 2481, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_rocket_silver
+  rotate: false
+  xy: 2612, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_shield_bronze
+  rotate: false
+  xy: 2743, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_shield_gold
+  rotate: false
+  xy: 2874, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_shield_silver
+  rotate: false
+  xy: 3005, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_speed_bronze
+  rotate: false
+  xy: 3136, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_speed_gold
+  rotate: false
+  xy: 3267, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_speed_silver
+  rotate: false
+  xy: 3398, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_stars_bronze
+  rotate: false
+  xy: 3529, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_stars_gold
+  rotate: false
+  xy: 3660, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_stars_silver
+  rotate: false
+  xy: 3791, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_time_bronze
+  rotate: false
+  xy: 3922, 377
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_time_gold
+  rotate: false
+  xy: 2088, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_time_silver
+  rotate: false
+  xy: 2219, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievement_unlock
+  rotate: false
+  xy: 2350, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_reward_plane
+  rotate: false
+  xy: 2350, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_achievements
+  rotate: false
+  xy: 1698, 313
+  size: 193, 193
+  orig: 193, 193
+  offset: 0, 0
+  index: -1
+ic_ads_video_small
+  rotate: false
+  xy: 1311, 150
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+ic_back
+  rotate: false
+  xy: 201, 3
+  size: 196, 196
+  orig: 196, 196
+  offset: 0, 0
+  index: -1
+ic_basket
+  rotate: false
+  xy: 1181, 119
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ic_bonus_flares
+  rotate: false
+  xy: 789, 3
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_bonus_fuel
+  rotate: false
+  xy: 856, 3
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_bonus_shild
+  rotate: false
+  xy: 923, 3
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_bonus_speed
+  rotate: false
+  xy: 1707, 246
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_bonus_star
+  rotate: false
+  xy: 1774, 246
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_bonus_turn
+  rotate: false
+  xy: 1841, 246
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_clock
+  rotate: false
+  xy: 1410, 150
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+ic_fuel
+  rotate: false
+  xy: 1050, 19
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+ic_game_logo
+  rotate: false
+  xy: 2, 201
+  size: 977, 305
+  orig: 977, 305
+  offset: 0, 0
+  index: -1
+ic_home
+  rotate: false
+  xy: 399, 6
+  size: 193, 193
+  orig: 193, 193
+  offset: 0, 0
+  index: -1
+ic_input_arrow_left
+  rotate: false
+  xy: 2481, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_input_arrow_right
+  rotate: false
+  xy: 2612, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_leaderboard
+  rotate: false
+  xy: 920, 70
+  size: 128, 129
+  orig: 128, 129
+  offset: 0, 0
+  index: -1
+ic_locked
+  rotate: false
+  xy: 1908, 246
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_pause
+  rotate: false
+  xy: 2743, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_play
+  rotate: false
+  xy: 981, 249
+  size: 257, 257
+  orig: 257, 257
+  offset: 0, 0
+  index: -1
+ic_repeat
+  rotate: false
+  xy: 1240, 249
+  size: 257, 257
+  orig: 257, 257
+  offset: 0, 0
+  index: -1
+ic_retry
+  rotate: false
+  xy: 2, 2
+  size: 197, 197
+  orig: 197, 197
+  offset: 0, 0
+  index: -1
+ic_reward_star
+  rotate: false
+  xy: 1893, 313
+  size: 193, 193
+  orig: 193, 193
+  offset: 0, 0
+  index: -1
+ic_settings
+  rotate: false
+  xy: 1499, 309
+  size: 197, 197
+  orig: 197, 197
+  offset: 0, 0
+  index: -1
+ic_settings_input_arrow
+  rotate: false
+  xy: 2874, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_input_joystick
+  rotate: false
+  xy: 3005, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_input_touch
+  rotate: false
+  xy: 3136, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_sound_off
+  rotate: false
+  xy: 3267, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_sound_on
+  rotate: false
+  xy: 3398, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_vibro_off
+  rotate: false
+  xy: 3529, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_settings_vibro_on
+  rotate: false
+  xy: 3660, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_share
+  rotate: false
+  xy: 3791, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_shop
+  rotate: false
+  xy: 594, 6
+  size: 193, 193
+  orig: 193, 193
+  offset: 0, 0
+  index: -1
+ic_shop_fuel
+  rotate: false
+  xy: 3922, 246
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_shop_stars
+  rotate: false
+  xy: 1050, 118
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+ic_star
+  rotate: false
+  xy: 1509, 210
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+ic_target_bonus
+  rotate: false
+  xy: 1975, 246
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_target_coin
+  rotate: false
+  xy: 1509, 143
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_target_enemy
+  rotate: false
+  xy: 1576, 143
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+ic_time
+  rotate: false
+  xy: 1608, 210
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1

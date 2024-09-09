@@ -1,0 +1,92 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	comfortaa-28: {
+		file: comfortaa-28.fnt
+	}
+	comfortaa-42: {
+		file: comfortaa-42.fnt
+	}
+	comfortaa-48: {
+		file: comfortaa-48.fnt
+	}
+	comfortaa-digits-96: {
+		file: comfortaa-digits-96.fnt
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	text: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+	text_secondary: {
+		r: 0.36078432
+		g: 0.21960784
+		b: 0.08627451
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	text: {
+		font: comfortaa-42
+		fontColor: text
+	}
+	title: {
+		parent: text
+		font: comfortaa-48
+	}
+	display: {
+		font: comfortaa-digits-96
+	}
+	description: {
+		parent: text
+	}
+	caption: {
+		parent: text
+		font: comfortaa-28
+	}
+	text_secondary: {
+		parent: text
+		fontColor: text_secondary
+	}
+	title_secondary: {
+		parent: title
+		fontColor: text_secondary
+	}
+	display_secondary: {
+		parent: display
+		fontColor: text_secondary
+	}
+	description_secondary: {
+		parent: description
+		fontColor: text_secondary
+	}
+	caption_secondary: {
+		parent: caption
+		fontColor: text_secondary
+	}
+	default: {
+		parent: text
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle: {
+	default: {
+		background: ic_input_joysticj_background
+		knob: ic_input_joystick
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: bg_white
+		titleFont: comfortaa-48
+		titleFontColor: text_secondary
+		stageBackground: bg_black_transparent
+	}
+}
+}

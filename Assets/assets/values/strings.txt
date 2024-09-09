@@ -1,0 +1,82 @@
+//splash
+string.splash_loading: Loading
+
+//settings
+string.settings_title: Options
+string.settings_sound: Sound
+string.settings_vibration: Vibration
+string.settings_input: Input
+string.settings_storage_remove: Reset
+string.settings_storage_remove_dialog_message: Delete all saved data without the possibility of recovery?
+string.settings_storage_remove_dialog_cancel_button: NO
+string.settings_storage_remove_dialog_ok_button: YES
+
+//pause
+string.pause_title: PAUSE
+
+//main
+string.start_plane_locked: Locked
+string.start_dialog_exit_message: Do you want exit an app?
+string.start_dialog_exit_yes: Exit
+string.start_dialog_exit_no: Continue playing
+string.privacy_dialog_message: To continue, you must accept the privacy policy (click to open in browser)
+string.privacy_dialog_yes: Accept
+string.privacy_dialog_no: Exit
+string.settings_privacy_policy: Privacy policy
+
+//results
+string.finish_title_score: Your score
+string.finish_ads_bonus: Get
+
+//notification
+string.notification_no_star_title: Not enough stars!
+string.notification_no_star_description: Collect them on the battlefield!
+
+string.notification_full_fuel_title: The gas tank is full
+string.notification_full_fuel_description: Time to fly!
+
+string.notification_no_fuel_title: Not enough fuel!
+string.notification_no_fuel_description: Buy it at the store or wait
+
+string.notification_one_fuel_title: Fuel
+string.notification_one_fuel_description: The tank is filled to one flight, let's go!
+
+string.notification_plane_locked_title: Locked
+string.notification_plane_locked_description: Open access for achievements!
+
+string.notification_storage_error_title: Sync error
+string.notification_storage_error_description: Failed to load data
+
+//achievements
+string.achievement_title: Achievements
+string.achievement_destroy_title: Fighter
+string.achievement_destroy_n_description: %d out of %d rockets
+
+string.achievement_star_count_title: Treasurer
+string.achievement_star_count_n_description: %d out of  %d stars
+
+string.achievement_speed_bonus_title: Flash
+string.achievement_speed_bonus_n_description: %d out of %d speed bonuses
+
+string.achievement_shield_bonus_title: Toughie
+string.achievement_shield_bonus_n_description: %d out of %d armor bonuses
+
+string.achievement_destroy_bonus_title: Instant death
+string.achievement_destroy_bonus_n_description: %d out of %d destruction bonuses
+
+string.achievement_time_max_title: Long-liver
+string.achievement_time_max_description: %d out of %d minutes
+
+//shop
+string.shop_title: Shop
+string.shop_fuel_title: Refill tank
+string.shop_fuel_description: +1 fuel
+string.shop_star_ads_title: +%s stars
+
+//social
+string.social_share_app_text: I recommend "Plane Rush!": https://play.google.com/store/apps/details?id=com.brookva.planerush
+
+//new year event
+string.event_newyear_dialog_title: Happy New Year!
+string.event_newyear_dialog_message: Snow, garlands and the smell of tangerines, and this can only mean one thing - the New Year is near!\n\nHappy Holidays! Santaplane is already waiting for you in the hangar!\n\nWe wish you happiness and successful flights!
+string.event_newyear_dialog_ok: Thanks!

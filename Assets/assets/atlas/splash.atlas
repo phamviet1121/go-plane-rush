@@ -1,0 +1,28 @@
+
+splash.png
+size: 1024, 1024
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+bg_white
+  rotate: false
+  xy: 2, 2
+  size: 31, 31
+  split: 0, 0, 0, 0
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+ic_loading
+  rotate: false
+  xy: 2, 121
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+ic_logo
+  rotate: false
+  xy: 2, 35
+  size: 523, 84
+  orig: 523, 84
+  offset: 0, 0
+  index: -1

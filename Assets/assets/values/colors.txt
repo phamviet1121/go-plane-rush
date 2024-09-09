@@ -1,0 +1,8 @@
+color.common_background: #7CCBF4ff
+color.common_background_day: #00000000
+color.common_background_night: #00000088
+color.common_white: #ffffffff
+color.common_red: #e01c26
+color.rocket_tail: #ffffffaa
+color.rocket_fire: #f59342ff
+color.plane_locked: #222222ff

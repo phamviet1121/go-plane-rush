@@ -1,0 +1,83 @@
+//splash
+string.splash_loading: Загрузка
+
+//settings
+string.settings_title: Настройки
+string.settings_sound: Звук
+string.settings_vibration: Вибрация
+string.settings_input: Управление
+string.settings_storage_remove: Сброс
+string.settings_storage_remove_dialog_message: Удалить все сохраненные данные без возможности восстановления?
+string.settings_storage_remove_dialog_cancel_button: Нет
+string.settings_storage_remove_dialog_ok_button: Да
+string.settings_privacy_policy: Политика конфиденциальности
+
+//pause
+string.pause_title: ПАУЗА
+
+//main
+string.start_plane_locked: Закрыто
+string.start_dialog_exit_message: Вы хотите выйти из приложения?
+string.start_dialog_exit_yes: Выйти
+string.start_dialog_exit_no: Продолжить играть
+string.privacy_dialog_message: Для продолжения необходимо принять Политику конфиденциальности (нажмите, чтобы открыть в браузере)
+string.privacy_dialog_yes: Принимаю
+string.privacy_dialog_no: Выйти
+
+//results
+string.finish_title_score: Ваш счет
+string.finish_ads_bonus: Получить
+
+// notifications
+string.notification_no_star_title: Не хватает звезд!
+string.notification_no_star_description: Соберите их на поле боя!
+
+string.notification_full_fuel_title: Бак полон
+string.notification_full_fuel_description: Время совершить вылет!
+
+string.notification_no_fuel_title: Нет топлива
+string.notification_no_fuel_description: Купите его в магазине или подождите
+
+string.notification_one_fuel_title: Топливо
+string.notification_one_fuel_description: Бак заполнен на один вылет, вперед!
+
+string.notification_plane_locked_title: Закрыто
+string.notification_plane_locked_description: Откройте доступ за достижения!
+
+string.notification_storage_error_title: Ошибка синхронизации
+string.notification_storage_error_description: Не удалось загрузить данные
+
+
+//achievements
+string.achievement_title: Достижения
+string.achievement_destroy_title: Истребитель
+string.achievement_destroy_n_description: %d из %d ракет
+
+string.achievement_star_count_title: Казначей
+string.achievement_star_count_n_description: %d из %d звезд
+
+string.achievement_speed_bonus_title: Флеш
+string.achievement_speed_bonus_n_description: %d из %d ускорений
+
+string.achievement_shield_bonus_title: Крепкий орешек
+string.achievement_shield_bonus_n_description: %d из %d щитов
+
+string.achievement_destroy_bonus_title: Мгновенная смерть
+string.achievement_destroy_bonus_n_description: %d из %d уничтожений
+
+string.achievement_time_max_title: Долгожитель
+string.achievement_time_max_description: %d из %d минут
+
+//shop
+string.shop_title: Магазин
+string.shop_fuel_title: Пополнить бак
+string.shop_fuel_description: +1 топливо
+string.shop_star_ads_title: +%s звезд
+
+//social
+string.social_share_app_text: Рекомендую "Plane Rush!": https://play.google.com/store/apps/details?id=com.brookva.planerush
+
+//new year event
+string.event_newyear_dialog_title: С Наступающим Новым годом!
+string.event_newyear_dialog_message: Снег, герлянды и запах мандаринов, а это может значить только одно - Новый Год уже близко!\n\nПоздравляем с наступающими праздниками! Санталет уже ждет тебя в ангаре!\n\nЖелаем счастья и удачных полетов!
+string.event_newyear_dialog_ok: Спасибо
