@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ff7a661f07e8b48a792fcc62eaa77f, type: 3}
+  m_Name: DataList
+  m_EditorClassIdentifier: 
+  dataquestslist:
+  - id: 0
+    anh_img: {fileID: 21300000, guid: 5cf0f1c1eca19c045963412dd62b92db, type: 3}
+    ten_nhienvu_txt: svfdgfhh
+    tiendo_txt: 4
+    tiendo_hoanthanh_txt: 4
+    thongtin_nv_txt: FGFHGFH
+    thuong_sao_txt: 122
+    trangthai_txt: DANHAN
+  - id: 1
+    anh_img: {fileID: 21300000, guid: 73685c2e2a850ae4cb1761c76f3f473e, type: 3}
+    ten_nhienvu_txt: SFSFDGDG
+    tiendo_txt: 0
+    tiendo_hoanthanh_txt: 10
+    thongtin_nv_txt: sfsfsdff
+    thuong_sao_txt: 222
+    trangthai_txt: CHUAHOANTHANH
+  - id: 2
+    anh_img: {fileID: 21300000, guid: a0d4fcdc703641f4485bd28e427ca1bc, type: 3}
+    ten_nhienvu_txt: VAICALON
+    tiendo_txt: 0
+    tiendo_hoanthanh_txt: 2
+    thongtin_nv_txt: DAANCHUA
+    thuong_sao_txt: 111
+    trangthai_txt: CHUAHOANTHANH
