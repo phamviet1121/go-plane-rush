@@ -9,7 +9,7 @@ public class goc_quay : MonoBehaviour
 
     void Update()
     {
-        // Lấy góc quay hiện tại của player dưới dạng Quaternion
+        
         Quaternion playerRotation = player.transform.rotation;
         Vector3 eulerAngles = playerRotation.eulerAngles;
 
