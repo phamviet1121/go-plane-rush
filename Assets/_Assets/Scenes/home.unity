@@ -6587,7 +6587,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766743423}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
@@ -9482,13 +9482,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1060535640}
+  - component: {fileID: 1060535641}
   m_Layer: 5
   m_Name: GameObject_dieukhuyen_volang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1060535640
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9510,6 +9511,22 @@ RectTransform:
   m_AnchoredPosition: {x: -1.0410194, y: 280}
   m_SizeDelta: {x: 97, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1060535641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060535639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89fbfea36fbb9b44b6123648c51d55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 766743424}
+  speed: 5
+  circle: {fileID: 783566400}
+  outercircle: {fileID: 1104904036}
 --- !u!1 &1062598657
 GameObject:
   m_ObjectHideFlags: 0
@@ -15206,7 +15223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1694386012
 RectTransform:
   m_ObjectHideFlags: 0
