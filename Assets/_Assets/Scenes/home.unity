@@ -6658,7 +6658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &766743424
 Transform:
   m_ObjectHideFlags: 0
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 766743423}
-  rotationSpeed: 0.2
+  rotationSpeed: 0.7
 --- !u!114 &766743428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13749,6 +13749,7 @@ GameObject:
   - component: {fileID: 1510013385}
   - component: {fileID: 1510013386}
   - component: {fileID: 1510013387}
+  - component: {fileID: 1510013388}
   m_Layer: 0
   m_Name: planes_5
   m_TagString: Untagged
@@ -13912,7 +13913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   dich: {fileID: 2092223378}
 --- !u!114 &1510013387
 MonoBehaviour:
@@ -13927,7 +13928,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1510013380}
-  rotationSpeed: 1
+  rotationSpeed: 3
+--- !u!114 &1510013388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510013380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253c880b1fdd99f43868083da4264643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camara: {fileID: 471275717}
+  offset: {x: 0, y: 0, z: -10}
 --- !u!4 &1514835521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 162677766957987512, guid: 5dd0cdbb65fb1494eaa6786315145a00, type: 3}
@@ -15646,7 +15661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1706863626
 Transform:
   m_ObjectHideFlags: 0
