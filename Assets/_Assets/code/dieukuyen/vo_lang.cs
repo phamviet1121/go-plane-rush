@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class vo_lang : MonoBehaviour
 {
-    public Transform player; // Bi?n ??i di?n cho ??i t??ng player
+    public GameObject player; // Bi?n ??i di?n cho ??i t??ng player
     public float speed = 5f; // T?c ?? di chuy?n c?a player
     private bool touchStart = false; // Xác ??nh tr?ng thái ch?m
     private Vector2 pointA; // ?i?m b?t ??u khi ch?m vào màn hình
@@ -81,7 +81,7 @@ public class vo_lang : MonoBehaviour
     // Hàm di chuy?n player theo h??ng ???c ch? ??nh
     void movercharecter(Vector2 d)
     {
-        player.Translate(d * speed * Time.deltaTime); // S? d?ng Translate ?? di chuy?n
+        player.transform.Translate(d * speed * Time.deltaTime); // S? d?ng Translate ?? di chuy?n
     }
 
 }

@@ -5,15 +5,15 @@ using static UnityEngine.GraphicsBuffer;
 
 public class ten_lua_run : MonoBehaviour
 {
-    public Transform player; 
+    public Transform tenlua; 
     public float rotationSpeed = 5f; 
 
     void Update()
     {
-        if (player != null)
+        if (tenlua != null)
         {
            
-            Vector3 directionToPlayer = player.position - transform.position;
+            Vector3 directionToPlayer =   transform.position-tenlua.position;
 
            
             float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
@@ -21,8 +21,8 @@ public class ten_lua_run : MonoBehaviour
            
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
-            
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+
+            tenlua.transform.rotation = Quaternion.Slerp(tenlua.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }
     }
 }

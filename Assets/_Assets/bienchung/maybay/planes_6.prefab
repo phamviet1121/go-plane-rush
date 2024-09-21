@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8847806542291458315}
   - component: {fileID: 6422294756863712090}
   - component: {fileID: 5620735984729339347}
+  - component: {fileID: 464710977387403753}
   m_Layer: 0
   m_Name: planes_6
   m_TagString: Untagged
@@ -236,6 +237,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.7
   dich: {fileID: 9217023887265880840}
+--- !u!114 &464710977387403753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006588184250281673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db10bc7a43575384697087e9e2786aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 12
 --- !u!1 &9217023887265880840
 GameObject:
   m_ObjectHideFlags: 0

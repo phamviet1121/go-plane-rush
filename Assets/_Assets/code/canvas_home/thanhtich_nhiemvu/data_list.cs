@@ -15,7 +15,7 @@ public class data_list : MonoBehaviour
     {
         
     }
-
+    [ContextMenu("save")]
     public void save()
     {
        // Debug.Log("chayhamsave");

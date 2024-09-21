@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7719187676362419552}
   - component: {fileID: 4890656603548472327}
   - component: {fileID: 1127345322771137184}
+  - component: {fileID: 1824017374164698575}
   m_Layer: 0
   m_Name: planes_1
   m_TagString: Untagged
@@ -288,3 +289,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1824017374164698575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7345494330735293117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db10bc7a43575384697087e9e2786aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 12

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class button_left_right : MonoBehaviour
 {
-    public GameObject player;
+    
     public Button right;
     public Button left;
     public float rotationSpeed = 1f;
@@ -36,11 +36,11 @@ public class button_left_right : MonoBehaviour
         //}
 
        
-        Vector3 currentEulerAngles = player.transform.eulerAngles;
+        Vector3 currentEulerAngles = transform.eulerAngles;
         float newZAngle = currentEulerAngles.z + horizontalInput * rotationSpeed;
 
        
-        player.transform.rotation = Quaternion.Euler(currentEulerAngles.x, currentEulerAngles.y, newZAngle);
+        transform.rotation = Quaternion.Euler(currentEulerAngles.x, currentEulerAngles.y, newZAngle);
     }
 
     

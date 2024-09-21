@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 1659555258597283408}
   - component: {fileID: 6888333359442508933}
   - component: {fileID: 6971875035497392441}
+  - component: {fileID: 2020426739804346756}
+  - component: {fileID: 9089715417127002394}
+  - component: {fileID: -1317355404303999402}
   m_Layer: 0
   m_Name: planes_0
   m_TagString: Untagged
@@ -31,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 5942607901365537019}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -8.778928, y: 3.312459, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -204,6 +207,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
   offset: {x: 0, y: 0, z: -10}
+--- !u!114 &2020426739804346756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942607901365537019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db10bc7a43575384697087e9e2786aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 12
+--- !u!114 &9089715417127002394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942607901365537019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dce81f9b3f7054d9b8411624a64758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  right: {fileID: 0}
+  left: {fileID: 0}
+  rotationSpeed: 1
+--- !u!114 &-1317355404303999402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942607901365537019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991f2acd27a32b4439e096fe88185e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tenlua: {fileID: 0}
+  rotationSpeed: 5
 --- !u!1 &6956959582404145761
 GameObject:
   m_ObjectHideFlags: 0

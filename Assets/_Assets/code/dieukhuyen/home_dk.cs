@@ -69,6 +69,10 @@ public class home_dk : MonoBehaviour
     }
     public void viewplayer(int id)
     {
+        if (currentObject != null)
+        {
+            Destroy(currentObject);
+        }
         if (id == 0)
         {
             if (currentObject != null)
