@@ -22,18 +22,18 @@ public class button_left_right : MonoBehaviour
     private void Update()
     {
        
-        if (Input.GetButtonDown("Button (Legacy)_right"))
-        {
-            horizontalInput = -1f;
-        }
-        else if (Input.GetButtonDown("Button (Legacy)_left"))
-        {
-            horizontalInput = 1f;
-        }
-        else
-        {
-            horizontalInput = 0f;
-        }
+        //if (Input.GetButtonDown("Button (Legacy)_right"))
+        //{
+        //    horizontalInput = -1f;
+        //}
+        //else if (Input.GetButtonDown("Button (Legacy)_left"))
+        //{
+        //    horizontalInput = 1f;
+        //}
+        //else
+        //{
+        //    horizontalInput = 0f;
+        //}
 
        
         Vector3 currentEulerAngles = player.transform.eulerAngles;

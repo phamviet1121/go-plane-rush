@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class move_camara : MonoBehaviour
+public class reset_dk : MonoBehaviour
 {
-    public GameObject camara;
-    public Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +13,6 @@ public class move_camara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        camara.transform.position = transform.position+ offset;
+        
     }
 }
