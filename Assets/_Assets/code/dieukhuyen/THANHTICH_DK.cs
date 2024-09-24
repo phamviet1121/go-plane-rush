@@ -6,7 +6,7 @@ public class THANHTICH_DK : MonoBehaviour
 {
     public GameObject home;      // Canvas home
     public GameObject thanhtich; // Canvas thanhtich
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,8 @@ public class THANHTICH_DK : MonoBehaviour
     {
         thanhtich.SetActive(true);  // Bật Canvas thanhtich
         home.SetActive(false);      // Tắt Canvas home
+      
+
     }
 
     // Tắt Canvas thanhtich và bật Canvas home
@@ -31,5 +33,6 @@ public class THANHTICH_DK : MonoBehaviour
     {
         thanhtich.SetActive(false); // Tắt Canvas thanhtich
         home.SetActive(true);       // Bật Canvas home
+       
     }
 }

@@ -42,3 +42,4 @@ public class savedata_player
 {
     public List<data_player> ListString;
 }
+// ko lien quan gi

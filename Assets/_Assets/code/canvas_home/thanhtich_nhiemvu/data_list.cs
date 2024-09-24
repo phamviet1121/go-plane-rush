@@ -43,7 +43,7 @@ public class data_list : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    private void OnApplicationQuit()
+    public void OnApplicationQuit()
     {
         save();
     }

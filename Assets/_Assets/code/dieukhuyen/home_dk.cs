@@ -17,7 +17,13 @@ public class home_dk : MonoBehaviour
     public GameObject btn_chonplayer_right;
     public GameObject btn_chonplayer_left;
     public GameObject vitri_player;
-    private GameObject currentObject;
+    public GameObject currentObject;
+   
+   
+
+    // private float horizontalInput ;
+
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +32,9 @@ public class home_dk : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
 
+    {
+        
     }
     public void onclick_chonplayer_right()
     {
@@ -157,4 +164,5 @@ public class home_dk : MonoBehaviour
         }
        
     }
+  
 }

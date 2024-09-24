@@ -16,7 +16,7 @@ public class view_quest : MonoBehaviour
         Ddatalist.LoadAll();
         foreach (var data in Quest_list.dataquestslist)
         {
-    
+
             taora(data);
         }
         mau.SetActive(false);
@@ -25,7 +25,7 @@ public class view_quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void taora(dataquest dataquest)
     {
@@ -37,12 +37,33 @@ public class view_quest : MonoBehaviour
     {
         if (questDictionary.TryGetValue(id, out get_quest quest))
         {
-           
+
             var data = Quest_list.dataquestslist.Find(d => d.id == id);
             if (data != null)
             {
                 quest.Setdata(data);
             }
         }
+    }
+    [ContextMenu("LoadLaiTatCa")]
+    public void LoadLaiTatCa()
+    {
+        foreach (var dataa in Quest_list.dataquestslist)
+        {
+            int id = dataa.id;
+
+
+            if (questDictionary.TryGetValue(id, out get_quest quest))
+            {
+
+                var data = Quest_list.dataquestslist.Find(d => d.id == id);
+                if (data != null)
+                {
+                    quest.Setdata(data);
+                }
+            }
+
+        }
+
     }
 }
