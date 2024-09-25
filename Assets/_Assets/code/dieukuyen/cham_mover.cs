@@ -17,7 +17,7 @@ public class ChamMover : MonoBehaviour
 
             
             Vector3 directionToPlayer = mousePosition - transform.position;
-            float angle = Mathf.Atan2(directionToPlayer.y, -directionToPlayer.x) * Mathf.Rad2Deg;
+            float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
 
             
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4883703795594237100}
   - component: {fileID: 1450015595815910175}
   - component: {fileID: 856090198059466459}
+  - component: {fileID: 474893994522196523}
   m_Layer: 0
   m_Name: rockets_3
-  m_TagString: Untagged
+  m_TagString: tenlua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +147,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   dich: {fileID: 4043012859264488473}
+--- !u!50 &474893994522196523
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528760639225271338}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4043012859264488473
 GameObject:
   m_ObjectHideFlags: 0

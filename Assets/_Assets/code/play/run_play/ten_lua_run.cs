@@ -7,15 +7,21 @@ public class ten_lua_run : MonoBehaviour
     public GameObject tenlua;
     public float rotationSpeed = 1f;
     private GameObject newtenlua;
-    float tenlualnewtime = 5f;
+    public float tenlualnewtime = 5f;
     float m_tenluanewtime;
     public GameObject play;
+    public GameObject vuno;
+    private GameObject newvuno;
+    public float newthoigianbatdau = 2f;
+
+    float thoigianbatdau;
     private void Start()
     {
         if (newtenlua != null)
         {
             Destroy(newtenlua);
         }
+        thoigianbatdau = newthoigianbatdau;
 
 
     }
@@ -24,7 +30,16 @@ public class ten_lua_run : MonoBehaviour
         float a = Random.Range(Random.Range(10, 20), Random.Range(-10, -20));
         float b = Random.Range(Random.Range(15, 20), Random.Range(-15, -20));
         Vector2 vitri = new Vector2(transform.position.x + a, transform.position.y + b);
-        if (play.activeSelf == true && newtenlua == null)
+        if (play.activeSelf == true)
+        {
+            thoigianbatdau -= Time.deltaTime;
+        }
+        else 
+        { 
+            thoigianbatdau = newthoigianbatdau;
+        }
+
+        if (play.activeSelf == true && newtenlua == null&& thoigianbatdau<=0)
         {
             m_tenluanewtime -= Time.deltaTime;
 
@@ -36,6 +51,11 @@ public class ten_lua_run : MonoBehaviour
                 newtenlua = Instantiate(tenlua, vitri, Quaternion.identity);
 
                 m_tenluanewtime = tenlualnewtime;
+                if (tenlualnewtime >= 1f)
+                {
+                    tenlualnewtime -= 0.2f;
+                }
+
             }
         }
         if (newtenlua != null)
@@ -67,7 +87,13 @@ public class ten_lua_run : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("tenlua"))
         {
-            Destroy(newtenlua);
+           
+
+            Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
+            //Destroy(gameObject);
+            newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
+            Destroy(newvuno, 1.8f);
         }
     }
+
 }

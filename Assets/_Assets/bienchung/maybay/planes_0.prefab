@@ -217,9 +217,10 @@ GameObject:
   - component: {fileID: 2020426739804346756}
   - component: {fileID: 3927359467598533472}
   - component: {fileID: 1209753412510006292}
+  - component: {fileID: 7754371598728851664}
   m_Layer: 0
   m_Name: planes_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,6 +423,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenlua: {fileID: 0}
   rotationSpeed: 5
+  tenlualnewtime: 5
+  play: {fileID: 0}
+  vuno: {fileID: 0}
+  newthoigianbatdau: 2
 --- !u!114 &2020426739804346756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +471,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
+--- !u!114 &7754371598728851664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942607901365537019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991f2acd27a32b4439e096fe88185e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tenlua: {fileID: 0}
+  rotationSpeed: 1
+  tenlualnewtime: 5
+  play: {fileID: 0}
+  vuno: {fileID: 0}
+  newthoigianbatdau: 2
 --- !u!1 &6630238607292950761
 GameObject:
   m_ObjectHideFlags: 0

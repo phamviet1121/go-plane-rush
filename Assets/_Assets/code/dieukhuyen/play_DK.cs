@@ -13,6 +13,8 @@ public class play_DK : MonoBehaviour
     public GameObject dk_play;
     public GameObject tamdung;
 
+    public home_dk HomeDK;
+
     public void onclick_play()
     {
         macdinh.SetActive(false);
@@ -36,7 +38,7 @@ public class play_DK : MonoBehaviour
 
         dk_play.SetActive(true);
         tamdung.SetActive(false);
-
+        HomeDK.viewplayer(HomeDK.id);
     }
     public void onClick_home()
     {
@@ -46,10 +48,12 @@ public class play_DK : MonoBehaviour
         play.SetActive(false);
         macdinh.SetActive(true);
         home.SetActive(true);
+        
+        HomeDK.viewplayer(HomeDK.id);
     }
     public void onclick_caidatplay()
     {
-        
+       
         caidat.SetActive(true);
         tamdung.SetActive(false);
     }
