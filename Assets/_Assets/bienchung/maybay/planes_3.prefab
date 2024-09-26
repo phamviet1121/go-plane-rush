@@ -127,7 +127,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.2
+  m_Time: 0.3
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -486,11 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89fbfea36fbb9b44b6123648c51d55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tam: {fileID: 0}
-  vongtron: {fileID: 0}
-  speed: 0
-  radius: 2
-  radius2: 2
+  joystick: {fileID: 0}
   rotationSpeed: 3
 --- !u!1 &7859209737283085075
 GameObject:
@@ -588,7 +584,7 @@ GameObject:
   - component: {fileID: 2256048164184419323}
   - component: {fileID: 5720015143627803512}
   m_Layer: 0
-  m_Name: Circle _khoi_trai (1)
+  m_Name: Circle _khoi_phai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

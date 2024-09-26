@@ -170,6 +170,6 @@ public class caidat_dk : MonoBehaviour
 
     public void dieukhoan()
     {
-        // Đường dẫn gì đó
+       
     }
 }

@@ -17,7 +17,7 @@ public class get_quest : MonoBehaviour
         this.Dataquest = dataquest;
 
         updateUI();
-        //Debug.Log("1");
+       
     }
     public void updateUI()
     {

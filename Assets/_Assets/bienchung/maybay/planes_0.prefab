@@ -127,7 +127,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.2
+  m_Time: 0.3
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -452,11 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89fbfea36fbb9b44b6123648c51d55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tam: {fileID: 0}
-  vongtron: {fileID: 0}
-  speed: 5
-  radius: 1
-  radius2: 2
+  joystick: {fileID: 0}
   rotationSpeed: 4
 --- !u!114 &1209753412510006292
 MonoBehaviour:
@@ -616,7 +612,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.2
+  m_Time: 0.3
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3

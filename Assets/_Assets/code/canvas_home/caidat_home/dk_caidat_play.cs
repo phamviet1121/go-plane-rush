@@ -5,7 +5,10 @@ public class dk_caidat_play : MonoBehaviour
 {
     public DATA_CAIDAT datalist_caidat;
     public GameObject home;
+    public GameObject dk_play;
+    public GameObject play;
    
+
     private void Start()
     {
         datalist_caidat.Loadcaidat();
@@ -14,15 +17,15 @@ public class dk_caidat_play : MonoBehaviour
     {
         datalist_caidat.Loadcaidat();
         // Bật/tắt tất cả các MyScript khi nhấn phím "T"
-        if (datalist_caidat.Data_caidat_play.dk_cd==0 && home.activeSelf==false)
+        if (datalist_caidat.Data_caidat_play.dk_cd==0 && dk_play.activeSelf==true&& home.activeSelf == false && play.activeSelf == true)
         {
             ToggleAllvo_lang();
         }
-        else if (datalist_caidat.Data_caidat_play.dk_cd == 2 && home.activeSelf == false)
+        else if (datalist_caidat.Data_caidat_play.dk_cd == 2 && dk_play.activeSelf == true && home.activeSelf == false&& play.activeSelf == true)
         {
             ToggleAllbutton_left_right();
         }
-        else if (datalist_caidat.Data_caidat_play.dk_cd == 1 && home.activeSelf == false)
+        else if (datalist_caidat.Data_caidat_play.dk_cd == 1 && dk_play.activeSelf == true && home.activeSelf == false && play.activeSelf == true)
         {
             ToggleAllChamMover();
         }

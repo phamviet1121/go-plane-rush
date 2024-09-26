@@ -62,10 +62,10 @@ public class button_left_right : MonoBehaviour
         Quaternion playerRotation = transform.rotation;
         Vector3 currentEulerAngles = playerRotation.eulerAngles;
 
-        float newZAngle = currentEulerAngles.z + -1 * rotationSpeed;
+        float newZAngle = currentEulerAngles.z + 1 * rotationSpeed;
 
 
-        transform.rotation = Quaternion.Euler(0f, 180f, newZAngle);
+        transform.rotation = Quaternion.Euler(0f, 0f, newZAngle);
         Debug.Log("chay sang trai");
     }
     public void phaimover()
@@ -74,10 +74,10 @@ public class button_left_right : MonoBehaviour
         Quaternion playerRotation = transform.rotation;
         Vector3 currentEulerAngles = playerRotation.eulerAngles;
 
-        float newZAngle = currentEulerAngles.z + 1 * rotationSpeed;
+        float newZAngle = currentEulerAngles.z + -1 * rotationSpeed;
 
 
-        transform.rotation = Quaternion.Euler(0f, 180f, newZAngle);
+        transform.rotation = Quaternion.Euler(0f, 0f, newZAngle);
         Debug.Log($"chay sang phai{transform.rotation}");
 
     }
@@ -91,7 +91,7 @@ public class button_left_right : MonoBehaviour
         float newZAngle = currentEulerAngles.z + 0 * rotationSpeed;
 
 
-        transform.rotation = Quaternion.Euler(0f, 180f, newZAngle);
+        transform.rotation = Quaternion.Euler(0f, 0, newZAngle);
         Debug.Log("khong them chay ");
     }
 }
