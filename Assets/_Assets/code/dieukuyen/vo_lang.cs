@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class vo_lang : MonoBehaviour
 {
-    //public Transform player;
-    public RectTransform tam;
-    public RectTransform vongtron;
-    
-    public float speed=5f;
 
-    // Bán kính của vòng tròn
-    public float radius = 2f;
-    public float radius2 = 2f;
-    public float rotationSpeed = 3f;
+
+    public FixedJoystick joystick;
+
+    public float rotationSpeed = 1f;
+
 
     void Start()
     {
@@ -21,51 +17,13 @@ public class vo_lang : MonoBehaviour
 
     void Update()
     {
-        if (Input.touchCount > 0)
+        float horizontal = joystick.Horizontal;
+        float vertical = joystick.Vertical;
+        if (horizontal != 0 || vertical != 0)
         {
-            Touch touch = Input.GetTouch(0);
-
-            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
-            {
-                Vector3 vitri_nguoidung_an = Camera.main.ScreenToWorldPoint(touch.position);
-                Vector2 vitrian = new Vector2(vitri_nguoidung_an.x, vitri_nguoidung_an.y);
-
-                // Chỉ thực hiện khi khoảng cách giữa điểm chạm và tâm là nhỏ hơn bán kính ngoài (radius2)
-                if (Vector2.Distance(vitrian, vongtron.transform.position) <= radius2)
-                {
-                    Vector2 direction = vitrian - new Vector2(vongtron.transform.position.x, vongtron.transform.position.y);
-                    float distance = direction.magnitude;
-
-                    // Nếu khoảng cách lớn hơn bán kính bên trong, thì điều chỉnh vị trí
-                    if (distance > radius)
-                    {
-                        direction.Normalize(); // Chuẩn hóa vector để có độ dài = 1
-                        tam.transform.position = vongtron.transform.position + (Vector3)(direction * radius); // Đặt `tam` tại điểm trên vòng tròn
-                    }
-                    else
-                    {
-                        // Di chuyển `tam` đến vị trí người dùng chạm nếu khoảng cách nhỏ hơn bán kính trong
-                        tam.transform.position = Vector2.MoveTowards(tam.transform.position, vitrian, speed * Time.deltaTime);
-                    }
-
-                    // Tính toán góc quay của `player` dựa trên vị trí của `tam`
-                    Vector2 gocquay = vitrian-new Vector2(tam.position.x, tam.position.y);
-                    float angle = Mathf.Atan2(gocquay.y, gocquay.x) * Mathf.Rad2Deg; // Tính góc từ vị trí `tam`
-                    Debug.Log($"{angle}");
-
-                    Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle)); // Quay trên trục Z
-                    Debug.Log($"{targetRotation}");
-                    //player.transform.rotation = Quaternion.Slerp(player.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed); // Xoay mượt
-                    //Debug.Log($"{player.transform.rotation}");
-                    //player.transform.rotation= Quaternion.Euler(new Vector3(0f, 180f, angle));
-                   transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed); // Xoay mượt
-                }
-            }
-        }
-        else
-        {
-            // Di chuyển `tam` trở về vị trí ban đầu (vongtron) khi không có người dùng chạm
-            tam.transform.position = Vector2.MoveTowards(tam.transform.position, vongtron.transform.position, (speed + 5) * Time.deltaTime);
+            float angle = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }
     }
 
