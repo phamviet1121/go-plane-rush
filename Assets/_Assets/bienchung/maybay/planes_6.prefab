@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3110612937927934039}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.674, y: 0.582, z: 0}
+  m_LocalPosition: {x: -0.65, y: 0.55, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,8 +210,8 @@ GameObject:
   - component: {fileID: 8192771124159044791}
   - component: {fileID: 2485571516130152112}
   - component: {fileID: 1701389683748080839}
-  - component: {fileID: 8847806542291458315}
   - component: {fileID: 6422294756863712090}
+  - component: {fileID: 8847806542291458315}
   - component: {fileID: 5620735984729339347}
   - component: {fileID: 464710977387403753}
   - component: {fileID: 4325912999234740355}
@@ -397,20 +397,6 @@ PolygonCollider2D:
       - {x: -0.32, y: -0.5}
       - {x: -0.13, y: -0.32}
   m_UseDelaunayMesh: 0
---- !u!114 &8847806542291458315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006588184250281673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253c880b1fdd99f43868083da4264643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camara: {fileID: 0}
-  offset: {x: 0, y: 0, z: -10}
 --- !u!114 &6422294756863712090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4006588184250281673}
   rotationSpeed: 1
---- !u!114 &5620735984729339347
+  movementSpeed: 5
+--- !u!114 &8847806542291458315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,6 +420,20 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4006588184250281673}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253c880b1fdd99f43868083da4264643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camara: {fileID: 0}
+  offset: {x: 0, y: 0, z: -10}
+--- !u!114 &5620735984729339347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006588184250281673}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
@@ -465,6 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
+  movementSpeed: 5
 --- !u!114 &1544850447740181418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   rotationSpeed: 3
+  movementSpeed: 5
 --- !u!1 &7399797833878927526
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 7399797833878927526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.674, y: -0.582, z: 0}
+  m_LocalPosition: {x: -0.65, y: -0.55, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

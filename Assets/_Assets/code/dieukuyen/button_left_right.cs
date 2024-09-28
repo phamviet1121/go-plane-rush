@@ -10,7 +10,7 @@ public class button_left_right : MonoBehaviour
     // public home_dk home_Dk_maybay;
     // public GameObject player;
      public float rotationSpeed = 1f;
-
+    public float movementSpeed = 5f;
     //// private float horizontalInput ;
 
     // private bool isMovingRight = false;
@@ -55,6 +55,7 @@ public class button_left_right : MonoBehaviour
                 }
             }
         }
+       // DiChuyenTheoGocQuay();
     }
 
     public void traimover()
@@ -93,6 +94,19 @@ public class button_left_right : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, 0, newZAngle);
         Debug.Log("khong them chay ");
+    }
+    private void DiChuyenTheoGocQuay()
+    {
+        // Lấy góc quay hiện tại
+        float angle = transform.eulerAngles.z;
+
+        // Chuyển đổi góc quay sang vector hướng di chuyển
+        Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+
+        // Di chuyển nhân vật về phía trước theo hướng của góc quay
+        transform.position += direction * movementSpeed * Time.deltaTime;
+
+        Debug.Log($"Di chuyển theo góc quay: {angle}, hướng: {direction}");
     }
 }
 

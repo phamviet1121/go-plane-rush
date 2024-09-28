@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3006672484657824283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.006, y: 0.701, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.043105297, y: 0.03976306, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -374,13 +374,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5942607901365537019}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea1fb5f1033ab6341973538b6cc1665d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5942607901365537019}
   rotationSpeed: 0.88
+  movementSpeed: 5
 --- !u!114 &6888333359442508933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +389,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5942607901365537019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
@@ -454,6 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   rotationSpeed: 4
+  movementSpeed: 5
 --- !u!114 &1209753412510006292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,6 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
+  movementSpeed: 5
 --- !u!114 &7754371598728851664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +515,7 @@ Transform:
   m_GameObject: {fileID: 6630238607292950761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.006, y: -0.695, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 0.043105297, y: 0.03976306, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

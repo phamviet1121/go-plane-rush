@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 375588272405679759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.444, y: -0.606, z: 0}
+  m_LocalPosition: {x: -0.45, y: -0.6, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,8 +210,8 @@ GameObject:
   - component: {fileID: 7429350070126819853}
   - component: {fileID: 2791152014029385058}
   - component: {fileID: 4876790660568916974}
-  - component: {fileID: 3464199867770542449}
   - component: {fileID: 6400151009777649608}
+  - component: {fileID: 3464199867770542449}
   - component: {fileID: 4388127127668061219}
   - component: {fileID: -8083888022333726600}
   - component: {fileID: -7247599959689714904}
@@ -403,20 +403,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3464199867770542449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3136794975470100038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253c880b1fdd99f43868083da4264643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camara: {fileID: 0}
-  offset: {x: 0, y: 0, z: -10}
 --- !u!114 &6400151009777649608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,7 +417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3136794975470100038}
   rotationSpeed: 1.1
---- !u!114 &4388127127668061219
+  movementSpeed: 5
+--- !u!114 &3464199867770542449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,6 +426,20 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136794975470100038}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253c880b1fdd99f43868083da4264643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camara: {fileID: 0}
+  offset: {x: 0, y: 0, z: -10}
+--- !u!114 &4388127127668061219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136794975470100038}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
@@ -471,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
+  movementSpeed: 5
 --- !u!114 &5386691919513711626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   rotationSpeed: 3
+  movementSpeed: 5
 --- !u!1 &5104148404924499259
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +599,7 @@ Transform:
   m_GameObject: {fileID: 8747236450519979691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.444, y: 0.6, z: 0}
+  m_LocalPosition: {x: -0.45, y: 0.6, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

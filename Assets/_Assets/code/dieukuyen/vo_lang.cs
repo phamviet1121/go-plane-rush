@@ -9,7 +9,7 @@ public class vo_lang : MonoBehaviour
     public FixedJoystick joystick;
 
     public float rotationSpeed = 1f;
-
+    public float movementSpeed = 5f;
 
     void Start()
     {
@@ -25,6 +25,31 @@ public class vo_lang : MonoBehaviour
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }
+        //DiChuyenTheoGocQuay();
+       // MoveInDirection(horizontal, vertical);
+    }
+    private void MoveInDirection(float horizontal, float vertical)
+    {
+        // Tạo vector hướng di chuyển từ joystick
+        Vector3 direction = new Vector3(horizontal, vertical, 0).normalized;
+
+        // Di chuyển đối tượng theo hướng đã tính toán
+        transform.position += direction * movementSpeed * Time.deltaTime;
+
+        Debug.Log($"Di chuyển: {direction}, vị trí: {transform.position}");
+    }
+    private void DiChuyenTheoGocQuay()
+    {
+        // Lấy góc quay hiện tại
+        float angle = transform.eulerAngles.z;
+
+        // Chuyển đổi góc quay sang vector hướng di chuyển
+        Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+
+        // Di chuyển nhân vật về phía trước theo hướng của góc quay
+        transform.position += direction * movementSpeed * Time.deltaTime;
+
+        Debug.Log($"Di chuyển theo góc quay: {angle}, hướng: {direction}");
     }
 
 

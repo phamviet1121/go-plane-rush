@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 919085088152228758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.066, y: -0.58, z: 0}
+  m_LocalPosition: {x: 0.06, y: -0.55, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -393,6 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7345494330735293117}
   rotationSpeed: 0.9
+  movementSpeed: 5
 --- !u!114 &4033832758798647914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345494330735293117}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a214643af2a3e854586121eac966a9d9, type: 3}
   m_Name: 
@@ -519,6 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
+  movementSpeed: 5
 --- !u!114 &-1416336821487181822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   rotationSpeed: 3
+  movementSpeed: 5
 --- !u!114 &-3522121535284006255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +565,7 @@ MonoBehaviour:
   rotationSpeed: 1
   tenlualnewtime: 5
   play: {fileID: 0}
-  vuno: {fileID: 0}
+  vuno: {fileID: 2117300381926590332, guid: b4d207c124541cf46a54a928cb34a807, type: 3}
   newthoigianbatdau: 2
 --- !u!1 &7570994469409852976
 GameObject:
@@ -591,7 +594,7 @@ Transform:
   m_GameObject: {fileID: 7570994469409852976}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.066, y: 0.568, z: 0}
+  m_LocalPosition: {x: 0.06, y: 0.55, z: 0}
   m_LocalScale: {x: 0.043109994, y: 0.039759994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
