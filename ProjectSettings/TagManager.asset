@@ -8,6 +8,7 @@ TagManager:
   - icon_Shields
   - Shields
   - Accelerate
+  - Explosive_mission
   layers:
   - Default
   - TransparentFX

@@ -31,6 +31,16 @@ public class vacham_tenlua : MonoBehaviour
 
         }
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Explosive_mission"))
+        {
+            Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
+            Destroy(gameObject);
+            newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
+            Destroy(newvuno, 1.8f);
+        }
+    }
     public void destroy_rocket()
     {
         Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
