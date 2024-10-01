@@ -360,7 +360,7 @@ TextureImporter:
         x: 1049
         y: 264
         width: 130
-        height: 131
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,8 +653,8 @@ TextureImporter:
         serializedVersion: 2
         x: 979
         y: 3
-        width: 259
-        height: 262
+        width: 260
+        height: 261
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +672,10 @@ TextureImporter:
       name: icons_26
       rect:
         serializedVersion: 2
-        x: 1238
+        x: 1239
         y: 1
-        width: 261
-        height: 263
+        width: 260
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,7 +738,7 @@ TextureImporter:
         x: 1891
         y: 0
         width: 195
-        height: 201
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

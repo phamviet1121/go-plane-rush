@@ -46,19 +46,16 @@ public class dk_caidat_play : MonoBehaviour
         foreach (vo_lang script in allScripts)
         {
             script.enabled = true;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (button_left_right script in allScriptss)
         {
             script.enabled = false ;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (ChamMover script in allScriptsss)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
     }
     void ToggleAllbutton_left_right()
@@ -72,19 +69,16 @@ public class dk_caidat_play : MonoBehaviour
         foreach (vo_lang script in allScripts)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (button_left_right script in allScriptss)
         {
             script.enabled = true;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (ChamMover script in allScriptsss)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
     }
     void ToggleAllChamMover()
@@ -98,19 +92,16 @@ public class dk_caidat_play : MonoBehaviour
         foreach (vo_lang script in allScripts)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (button_left_right script in allScriptss)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (ChamMover script in allScriptsss)
         {
             script.enabled = true;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
     }
     void ToggleAllOFF()
@@ -124,19 +115,16 @@ public class dk_caidat_play : MonoBehaviour
         foreach (vo_lang script in allScripts)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (button_left_right script in allScriptss)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
 
         foreach (ChamMover script in allScriptsss)
         {
             script.enabled = false;
-            Debug.Log(script.enabled ? "Bật MyScript trên " + script.gameObject.name : "Tắt MyScript trên " + script.gameObject.name);
         }
     }
 }

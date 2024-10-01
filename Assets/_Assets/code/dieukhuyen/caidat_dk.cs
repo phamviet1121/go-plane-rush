@@ -4,38 +4,40 @@ using UnityEngine;
 
 public class caidat_dk : MonoBehaviour
 {
-    public GameObject caidat; // Bật tắt Canvas
-    public GameObject home;   // Bật tắt Canvas
+    public GameObject caidat;
+    public GameObject home;
     public GameObject play;
     public GameObject tamdung;
 
-    public bool amthanh ;
-    public GameObject ing_amthanh_true; // Bật tắt ảnh
-    public GameObject ing_amthanh_false; // Bật tắt ảnh
-
-    public GameObject nutdk; // Bật tắt GameObject
-    public GameObject volangdk; // Bật tắt GameObject
-    public GameObject chamtaydk; // Bật tắt GameObject
-    public GameObject img_nut; // Bật tắt ảnh
-    public GameObject img_volang; // Bật tắt ảnh
-    public GameObject img_cham; // Bật tắt ảnh
+    public bool amthanh;
+    public GameObject ing_amthanh_true;
+    public GameObject ing_amthanh_false;
+    public GameObject nutdk;
+    public GameObject volangdk;
+    public GameObject chamtaydk;
+    public GameObject img_nut;
+    public GameObject img_volang;
+    public GameObject img_cham;
     int dk = 0;
 
-    public GameObject reset; // Bật tắt Canvas
+    public GameObject reset;
 
     public bool rung = true;
-    public GameObject ing_rung_true; // Bật tắt ảnh
-    public GameObject ing_rung_false; // Bật tắt ảnh
+    public GameObject ing_rung_true;
+    public GameObject ing_rung_false;
 
     public DATA_CAIDAT datacaidat;
-    // Start is called before the first frame update
+
+
+    public Dk_gameover dkgameover;
+    public GameObject game_over;
     void Start()
     {
 
         datacaidat.Loadcaidat();
 
-        amthanh =(datacaidat.Data_caidat_play.amthanh_cd == 0)? true:false;
-        rung= (datacaidat.Data_caidat_play.rung_cd == 0) ? true : false;
+        amthanh = (datacaidat.Data_caidat_play.amthanh_cd == 0) ? true : false;
+        rung = (datacaidat.Data_caidat_play.rung_cd == 0) ? true : false;
         dk = datacaidat.Data_caidat_play.dk_cd;
 
         onclickamthanhh();
@@ -45,50 +47,60 @@ public class caidat_dk : MonoBehaviour
         offclickcaidat();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
     }
 
-    // Hàm bật canvas "caidat" và tắt "home"
+
     public void onclickcaidat()
     {
-        home.SetActive(false); // Tắt canvas home
-        caidat.SetActive(true); // Bật canvas caidat
+        home.SetActive(false);
+        caidat.SetActive(true);
     }
 
-    // Hàm tắt canvas "caidat" và bật "home"
+
     public void offclickcaidat()
     {
         if (play.activeSelf == false)
         {
-            home.SetActive(true);  
+            home.SetActive(true);
             caidat.SetActive(false);
         }
         else
         {
-            caidat.SetActive(false);
-            tamdung.SetActive(true);
+            if (dkgameover.gameover == true)
+            {
+                game_over.SetActive(true);
+                caidat.SetActive(false);
+                dkgameover.gameover = false;
+            }
+            else
+            {
+                caidat.SetActive(false);
+                tamdung.SetActive(true);
+            }
+
         }
-      
+
     }
 
-    // Hàm bật tắt âm thanh
+
     public void onclickamthanhh()
     {
         if (amthanh)
         {
             amthanh = false;
-            ing_amthanh_false.SetActive(true); // Bật ảnh ing_amthanh_false
-            ing_amthanh_true.SetActive(false); // Tắt ảnh ing_amthanh_true
+            ing_amthanh_false.SetActive(true);
+            ing_amthanh_true.SetActive(false);
 
         }
         else
         {
             amthanh = true;
-            ing_amthanh_false.SetActive(false); // Tắt ảnh ing_amthanh_false
-            ing_amthanh_true.SetActive(true); // Bật ảnh ing_amthanh_true
+            ing_amthanh_false.SetActive(false);
+            ing_amthanh_true.SetActive(true);
         }
         datacaidat.Data_caidat_play.amthanh_cd = (amthanh == true) ? 1 : 0;
         datacaidat.Savecaidat();
@@ -99,12 +111,11 @@ public class caidat_dk : MonoBehaviour
     public void onclickdkPlayer()
     {
         dk++;
-        Debug.Log($"dk: {dk}");
-        Debug.Log($"dk % 3: {dk % 3}");
+
 
         if (dk % 3 == 0)
         {
-            Debug.Log("Condition 1 met");
+
             img_nut.SetActive(true);
             img_volang.SetActive(false);
             img_cham.SetActive(false);
@@ -116,7 +127,7 @@ public class caidat_dk : MonoBehaviour
         }
         else if (dk % 3 == 1)
         {
-            Debug.Log("Condition 2 met");
+
             img_nut.SetActive(false);
             img_volang.SetActive(true);
             img_cham.SetActive(false);
@@ -127,7 +138,7 @@ public class caidat_dk : MonoBehaviour
         }
         else
         {
-            Debug.Log("Condition 3 met");
+
             img_nut.SetActive(false);
             img_volang.SetActive(false);
             img_cham.SetActive(true);
@@ -136,32 +147,32 @@ public class caidat_dk : MonoBehaviour
             volangdk.SetActive(false);
             chamtaydk.SetActive(true);
         }
-        datacaidat.Data_caidat_play.dk_cd = (dk-1) % 3;
+        datacaidat.Data_caidat_play.dk_cd = (dk - 1) % 3;
         datacaidat.Savecaidat();
         datacaidat.Loadcaidat();
     }
 
 
-    // Hàm reset 
+
     public void onclickReset()
     {
-        reset.SetActive(true); // Bật canvas reset
+        reset.SetActive(true);
     }
 
-    // Hàm bật tắt rung
+
     public void onclickrung()
     {
         if (rung)
         {
             rung = false;
-            ing_rung_false.SetActive(true); // Bật ảnh ing_rung_false
-            ing_rung_true.SetActive(false); // Tắt ảnh ing_rung_true
+            ing_rung_false.SetActive(true);
+            ing_rung_true.SetActive(false);
         }
         else
         {
             rung = true;
-            ing_rung_false.SetActive(false); // Tắt ảnh ing_rung_false
-            ing_rung_true.SetActive(true); // Bật ảnh ing_rung_true
+            ing_rung_false.SetActive(false);
+            ing_rung_true.SetActive(true);
         }
         datacaidat.Data_caidat_play.rung_cd = (amthanh == true) ? 1 : 0;
         datacaidat.Savecaidat();
@@ -170,6 +181,6 @@ public class caidat_dk : MonoBehaviour
 
     public void dieukhoan()
     {
-       
+
     }
 }

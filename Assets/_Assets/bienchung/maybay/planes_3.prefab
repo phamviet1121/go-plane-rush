@@ -217,6 +217,10 @@ GameObject:
   - component: {fileID: -6811249020143659052}
   - component: {fileID: 1231301915514971786}
   - component: {fileID: 766332367382109607}
+  - component: {fileID: -4445595668502907463}
+  - component: {fileID: 5810929053003008848}
+  - component: {fileID: 5490630763196129658}
+  - component: {fileID: 4517144281381223907}
   m_Layer: 0
   m_Name: planes_3
   m_TagString: Player
@@ -467,6 +471,10 @@ MonoBehaviour:
   play: {fileID: 0}
   vuno: {fileID: 2117300381926590332, guid: b4d207c124541cf46a54a928cb34a807, type: 3}
   newthoigianbatdau: 2
+  Notification_icon: {fileID: 0}
+  canvas: {fileID: 0}
+  padding: 10
+  game_over: {fileID: 0}
 --- !u!114 &-6811249020143659052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +493,10 @@ MonoBehaviour:
   play: {fileID: 0}
   vuno: {fileID: 2117300381926590332, guid: b4d207c124541cf46a54a928cb34a807, type: 3}
   newthoigianbatdau: 2
+  Notification_icon: {fileID: 0}
+  canvas: {fileID: 0}
+  padding: 10
+  game_over: {fileID: 0}
 --- !u!114 &1231301915514971786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,9 +509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1fb5f1033ab6341973538b6cc1665d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   rotationSpeed: 1
   movementSpeed: 5
+  TimeAccelerate: 0
+  NewTimeAccelerate: 10
 --- !u!114 &766332367382109607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +527,168 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 0}
   offset: {x: 0, y: 0, z: -10}
+--- !u!114 &-4445595668502907463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842722961059798242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991f2acd27a32b4439e096fe88185e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tenlua: {fileID: 0}
+  rotationSpeed: 1
+  tenlualnewtime: 5
+  play: {fileID: 0}
+  vuno: {fileID: 0}
+  newthoigianbatdau: 2
+  Notification_icon: {fileID: 0}
+  canvas: {fileID: 0}
+  padding: 10
+  game_over: {fileID: 0}
+--- !u!114 &5810929053003008848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842722961059798242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991f2acd27a32b4439e096fe88185e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tenlua: {fileID: 0}
+  rotationSpeed: 1
+  tenlualnewtime: 5
+  play: {fileID: 0}
+  vuno: {fileID: 0}
+  newthoigianbatdau: 2
+  Notification_icon: {fileID: 0}
+  canvas: {fileID: 0}
+  padding: 10
+  game_over: {fileID: 0}
+--- !u!114 &5490630763196129658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842722961059798242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ed4987015be324abaeac70bd7a25f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Icon_Shields: {fileID: 0}
+  TimeCreatedShields: 0
+  NewTimeCreatedShields: 20
+  number_shields: 0
+  Shields: {fileID: 0}
+  new_Shields: {fileID: 0}
+  location: {fileID: 0}
+  Notification_icon_Shields: {fileID: 0}
+  canvas: {fileID: 0}
+  padding: 10
+--- !u!82 &4517144281381223907
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842722961059798242}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 30623cc8ce8c0f1488b370ebb891d11c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7859209737283085075
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class data_list : MonoBehaviour
 
     [SerializeField]
     public List<save_quest> saveDataQuest = new List<save_quest>();
-    // Start is called before the first frame update
+  
     void Start()
     {
         
