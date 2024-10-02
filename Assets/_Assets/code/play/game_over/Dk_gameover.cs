@@ -15,8 +15,10 @@ public class Dk_gameover : MonoBehaviour
     public GameObject macdinh;
     public GameObject thanhtich;
     public GameObject caidat;
-   // public GameObject dk_play;
+    // public GameObject dk_play;
     public bool gameover;
+    public Summary summary;
+    public list_sao List_sao;
     void Start()
     {
 
@@ -29,37 +31,44 @@ public class Dk_gameover : MonoBehaviour
         {
             dk.SetActive(false);
         }
-       
+
 
     }
     public void choilai_gameover()
     {
-        game_over.SetActive(false);
-        dk.SetActive(true);
+        List_sao.save_int_sao += summary.Summary_gameplay;
+        List_sao.save_sao();
+        List_sao.load_sao();
 
+        dk.SetActive(true);
+        game_over.SetActive(false);
         HomeDK.viewplayer(HomeDK.id);
         Time.timeScale = 1f;
         time.starttime = Time.time;
     }
     public void home_gameover()
     {
-        game_over.SetActive(false);
+        List_sao.save_int_sao += summary.Summary_gameplay;
+        List_sao.save_sao();
+        List_sao.load_sao();
+
         dk.SetActive(true);
         play.SetActive(false);
         macdinh.SetActive(true);
         home.SetActive(true);
-
+        game_over.SetActive(false);
         HomeDK.viewplayer(HomeDK.id);
+
         Time.timeScale = 1f;
         time.starttime = Time.time;
     }
     public void caidat_gameover()
-    { 
+    {
         gameover = true;
         caidat.SetActive(true);
         game_over.SetActive(false);
-       
-       
+
+
 
     }
     public void thanhtich_gameover()
@@ -67,6 +76,6 @@ public class Dk_gameover : MonoBehaviour
         gameover = true;
         thanhtich.SetActive(true);
         game_over.SetActive(false);
-       
+
     }
 }
