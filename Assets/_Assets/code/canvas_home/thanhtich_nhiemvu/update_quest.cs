@@ -10,6 +10,7 @@ public class update_quest : MonoBehaviour
     public InputField idd;
     public InputField tiendo;
     public Button capnhat;
+    int sao;
     //public void OnCollisionEnter2D(Collision2D collision)
     //{
 
@@ -26,7 +27,16 @@ public class update_quest : MonoBehaviour
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
                     Debug.Log("dahoanthanh");
-                    data.trangthai_txt = "DANHAN";
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            sao += int.Parse(data.thuong_sao_txt);
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
 
                 }
                 else

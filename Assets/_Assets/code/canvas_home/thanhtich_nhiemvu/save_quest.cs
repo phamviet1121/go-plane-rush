@@ -13,4 +13,5 @@ public class save_quest
     public string thongtin_nv_txt;
     public string thuong_sao_txt;
     public string trangthai_txt;
+  
 }
