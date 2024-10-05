@@ -19,6 +19,7 @@ public class Dk_gameover : MonoBehaviour
     public bool gameover;
     public Summary summary;
     public list_sao List_sao;
+    public update_quest update;
     void Start()
     {
 
@@ -40,7 +41,10 @@ public class Dk_gameover : MonoBehaviour
         List_sao.save_sao();
         List_sao.load_sao();
 
+        update.OnCapnhatClick();
+
         dk.SetActive(true);
+
         game_over.SetActive(false);
         HomeDK.viewplayer(HomeDK.id);
         Time.timeScale = 1f;
@@ -51,6 +55,8 @@ public class Dk_gameover : MonoBehaviour
         List_sao.save_int_sao += summary.Summary_gameplay;
         List_sao.save_sao();
         List_sao.load_sao();
+
+        update.OnCapnhatClick();
 
         dk.SetActive(true);
         play.SetActive(false);

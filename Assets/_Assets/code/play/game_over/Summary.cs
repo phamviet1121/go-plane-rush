@@ -6,9 +6,15 @@ using UnityEngine.UI;
 public class Summary : MonoBehaviour
 {
 
-    public float point_time;
-    public float point_star;
+    public int point_time;
+    public int point_star;
+  public int point_rockets;
+    public int point_accelerate;
+    public int point_shield;
+
+
     public int Summary_gameplay;
+  
     public Text point_time_txt;
     public Text point_star_txt;
     public Text Summary_txt;
@@ -31,10 +37,10 @@ public class Summary : MonoBehaviour
 
         if (game_over.activeSelf) 
         {
-            point_time = Time_play.timeplay;
+            point_time = (int)(Time_play.timeplay);
 
             point_time_txt.text = string.Format($"{(int)(point_time / 5)}"); 
-            point_star_txt.text = string.Format($"{(int)((point_time / 10) + point_star + 1)}"); 
+            point_star_txt.text = string.Format($"{(int)((point_time / 10) + point_rockets+ point_star + 1)}"); 
 
             Summary_gameplay = (int)(point_time / 5) + (int)((point_time / 10) + point_star + 1); 
             Summary_txt.text = string.Format($"{Summary_gameplay}");
@@ -44,7 +50,10 @@ public class Summary : MonoBehaviour
 
         if (!game_over.activeSelf && !Dk_gameover.gameover) 
         {
-            point_star = 0;  
+            point_star = 0;
+            point_rockets = 0;
+            point_shield = 0;
+            point_accelerate = 0;
         }
 
 

@@ -8,7 +8,7 @@ public class vacham_tenlua : MonoBehaviour
     private GameObject newvuno;
     public bool gameOver=false;
     float rocket_lifetime = 15f;
-
+   
     private void Start()
     {
         Invoke("destroy_rocket", rocket_lifetime);
@@ -18,6 +18,7 @@ public class vacham_tenlua : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("tenlua"))
         {
+           
             Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
             Destroy(gameObject);
             newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
