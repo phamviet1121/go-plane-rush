@@ -31,7 +31,7 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 2
     anh_img: {fileID: -1777785936, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treasurer
+    ten_nhienvu_txt: Treqsurer
     tiendo_txt: 1
     tiendo_hoanthanh_txt: 150
     thongtin_nv_txt: stars
@@ -40,7 +40,7 @@ MonoBehaviour:
   - id: 3
     anh_img: {fileID: -646394052, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 3
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 50
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 100
@@ -48,7 +48,7 @@ MonoBehaviour:
   - id: 4
     anh_img: {fileID: 1529694265, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 1
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 50
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 100
@@ -78,9 +78,9 @@ MonoBehaviour:
     thuong_sao_txt: 200
     trangthai_txt: CHUAHOANTHANH
   - id: 8
-    anh_img: {fileID: 677157349, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treasurer
-    tiendo_txt: 1
+    anh_img: {fileID: -246968058, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
+    ten_nhienvu_txt: Trequrer
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 1500
     thongtin_nv_txt: stars
     thuong_sao_txt: 300
@@ -88,7 +88,7 @@ MonoBehaviour:
   - id: 9
     anh_img: {fileID: -2064032417, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 3
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 250
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 200
@@ -96,7 +96,7 @@ MonoBehaviour:
   - id: 10
     anh_img: {fileID: -1934627256, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 1
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 200
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 200
@@ -127,8 +127,8 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 14
     anh_img: {fileID: 1070242758, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treasurer
-    tiendo_txt: 1
+    ten_nhienvu_txt: Treqsurer
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 5000
     thongtin_nv_txt: stars
     thuong_sao_txt: 500
@@ -136,7 +136,7 @@ MonoBehaviour:
   - id: 15
     anh_img: {fileID: 531744076, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 3
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 500
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 350
@@ -144,7 +144,7 @@ MonoBehaviour:
   - id: 16
     anh_img: {fileID: 805394296, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 1
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 500
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 350
