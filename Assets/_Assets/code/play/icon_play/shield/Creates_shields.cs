@@ -12,7 +12,7 @@ public class Creates_shields : MonoBehaviour
     //public Transform player;
     public float TimeCreatedShields;
     public float NewTimeCreatedShields = 20f;
-    public float number_shields = 0;
+    public float number_shields ;
     public GameObject Shields;
     public GameObject new_Shields;
 
@@ -156,6 +156,10 @@ public class Creates_shields : MonoBehaviour
         if (NewNotification_Icon_Shields != null)
         {
             Destroy(NewNotification_Icon_Shields);
+        }
+        if (new_Shields != null)
+        {
+            Destroy(new_Shields);
         }
     }
 }

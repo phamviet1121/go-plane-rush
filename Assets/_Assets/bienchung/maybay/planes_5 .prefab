@@ -636,6 +636,7 @@ MonoBehaviour:
   Notification_icon_Shields: {fileID: 0}
   canvas: {fileID: 0}
   padding: 10
+  play: {fileID: 0}
 --- !u!82 &5258194913520402734
 AudioSource:
   m_ObjectHideFlags: 0

@@ -58,7 +58,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                   
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -76,7 +76,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                   
                 }
             }
 
@@ -90,7 +90,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                    
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -108,7 +108,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                  
                 }
             }
 
@@ -124,7 +124,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                   
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -142,7 +142,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                  
                 }
             }
 
@@ -157,7 +157,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                    //Debug.Log("dahoanthanh");
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -175,7 +175,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                    //Debug.Log("CHUA HOAN THANH DAU");
                 }
             }
 
@@ -189,7 +189,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                  //  Debug.Log("dahoanthanh");
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -207,7 +207,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                 //   Debug.Log("CHUA HOAN THANH DAU");
                 }
             }
             if (data.ten_nhienvu_txt == "Instant death")
@@ -219,7 +219,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                    Debug.Log("dahoanthanh");
+                   // Debug.Log("dahoanthanh");
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -237,9 +237,10 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                    Debug.Log("CHUA HOAN THANH DAU");
+                   // Debug.Log("CHUA HOAN THANH DAU");
                 }
             }
+           
 
 
         }

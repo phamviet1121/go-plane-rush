@@ -25,7 +25,7 @@ public class database_save_play_thanhtich : MonoBehaviour
         speedCollide= Summary.point_accelerate;
         armorCollide= Summary.point_shield;
         rocketsCollide= Summary.point_rockets;
-
+        destructionCollide = Summary.point_Destruction;
     }
 }
 

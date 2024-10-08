@@ -16,7 +16,7 @@ public class dk_caidat_play : MonoBehaviour
     void Update()
     {
         datalist_caidat.Loadcaidat();
-        // Bật/tắt tất cả các MyScript khi nhấn phím "T"
+      
         if (datalist_caidat.Data_caidat_play.dk_cd==0 && dk_play.activeSelf==true&& home.activeSelf == false && play.activeSelf == true)
         {
             ToggleAllvo_lang();

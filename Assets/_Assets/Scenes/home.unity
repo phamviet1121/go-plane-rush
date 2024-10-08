@@ -1652,14 +1652,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121e54149b6f2e142b8785fc956ae008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1416965576}
+  player1: {fileID: 766743423}
   player2: {fileID: 1701950624}
-  player3: {fileID: 1905748218}
-  player4: {fileID: 504499511}
-  player5: {fileID: 1609305713}
-  player6: {fileID: 533595283}
+  player3: {fileID: 1416965576}
+  player4: {fileID: 1609305713}
+  player5: {fileID: 1905748218}
+  player6: {fileID: 504499511}
   player7: {fileID: 938766552}
-  player8: {fileID: 766743423}
+  player8: {fileID: 533595283}
   player9: {fileID: 556929254}
   id: 0
   btn_chonplayer_right: {fileID: 504702162}
@@ -2376,6 +2376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Summary: {fileID: 1911267345}
+  datacaidat: {fileID: 471275723}
 --- !u!1 &274801565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5631,6 +5632,7 @@ GameObject:
   - component: {fileID: 593209628}
   - component: {fileID: 593209629}
   - component: {fileID: 593209630}
+  - component: {fileID: 593209631}
   m_Layer: 5
   m_Name: canvas_player
   m_TagString: Untagged
@@ -5814,6 +5816,26 @@ MonoBehaviour:
   summary: {fileID: 0}
   List_sao: {fileID: 0}
   update: {fileID: 0}
+--- !u!114 &593209631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593209622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98260b1bc557284698734f32b341951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon_destruction: {fileID: 862053800}
+  TimeCreatedDestruction: 0
+  NewTimeCreatedDestruction: 30
+  location: {fileID: 1559679709}
+  newDestruction: {fileID: 0}
+  Notification_icon_Destruction: {fileID: 1687110078}
+  canvas: {fileID: 593209625}
+  padding: 10
 --- !u!1 &617743790
 GameObject:
   m_ObjectHideFlags: 0
@@ -7860,6 +7882,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855306832}
   m_CullTransparentMesh: 1
+--- !u!1 &862053800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 31309304460953990, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+  m_PrefabInstance: {fileID: 1367415009781691247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &862053801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+  m_PrefabInstance: {fileID: 1367415009781691247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863788804
 GameObject:
   m_ObjectHideFlags: 0
@@ -8905,7 +8937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54.2, y: -0.0000025034}
+  m_AnchoredPosition: {x: -49.3, y: -0.0000025034}
   m_SizeDelta: {x: 40.88, y: 37.546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979717920
@@ -9223,8 +9255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 20.8, y: 0}
-  m_SizeDelta: {x: -92.59, y: -40.684}
+  m_AnchoredPosition: {x: 26, y: 0}
+  m_SizeDelta: {x: -105.66, y: -40.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031898152
 MonoBehaviour:
@@ -14274,6 +14306,7 @@ Transform:
   - {fileID: 475637557}
   - {fileID: 2059654863}
   - {fileID: 1985066284}
+  - {fileID: 1789606108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591204405
@@ -16056,6 +16089,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786727087}
   m_CullTransparentMesh: 1
+--- !u!1 &1789606107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789606108}
+  m_Layer: 0
+  m_Name: GameObject_destruction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789606108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789606107}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 862053801}
+  m_Father: {fileID: 1584050260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1794466662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5131628524375655156, guid: befe020b4f15f9d42bbd4ddb05e227e3, type: 3}
@@ -16343,7 +16408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.25712955}
   m_AnchorMax: {x: 0.5, y: 0.27169335}
-  m_AnchoredPosition: {x: -11.1, y: 114.300064}
+  m_AnchoredPosition: {x: -11.1, y: 114.3004}
   m_SizeDelta: {x: 100, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1846586299
@@ -17241,7 +17306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1985066284
 Transform:
   m_ObjectHideFlags: 0
@@ -19211,6 +19276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 137862718}
     - target: {fileID: -8858626192836386397, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
+      propertyPath: number_shields
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8858626192836386397, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
       propertyPath: Notification_icon_Shields
       value: 
       objectReference: {fileID: 1687110078}
@@ -19234,6 +19303,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -5784159632880902071, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -5784159632880902071, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
       propertyPath: tenlualnewtime
       value: 15
@@ -19267,6 +19340,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -5060603287823415559, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5060603287823415559, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
       propertyPath: tenlualnewtime
       value: 3
       objectReference: {fileID: 0}
@@ -19294,6 +19371,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -4763401511498523111, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -4763401511498523111, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
       propertyPath: tenlualnewtime
       value: 5
@@ -19350,6 +19431,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -2244991513855571655, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -2244991513855571655, guid: 029d6dd875551c94593f6ee17971d163, type: 3}
       propertyPath: tenlualnewtime
       value: 10
@@ -19500,6 +19585,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a66e936879559c4c8ffec1416f9586f, type: 3}
+--- !u!1001 &1367415009781691247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1789606108}
+    m_Modifications:
+    - target: {fileID: 31309304460953990, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_Name
+      value: icons_destruction
+      objectReference: {fileID: 0}
+    - target: {fileID: 31309304460953990, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_TagString
+      value: icon_destruction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643860801826657761, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949183750115012219, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
+      propertyPath: summary
+      value: 
+      objectReference: {fileID: 1911267345}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b61656953629074fb9e5e6b0ed7d025, type: 3}
 --- !u!1001 &1416910148218982368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19720,6 +19870,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -8836569623707580665, guid: cf65736f34b685345bfd059ede31b068, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8836569623707580665, guid: cf65736f34b685345bfd059ede31b068, type: 3}
       propertyPath: tenlualnewtime
       value: 10
       objectReference: {fileID: 0}
@@ -19772,6 +19926,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -2731156038288645934, guid: cf65736f34b685345bfd059ede31b068, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2731156038288645934, guid: cf65736f34b685345bfd059ede31b068, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -19795,6 +19953,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -579414987020000355, guid: cf65736f34b685345bfd059ede31b068, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -579414987020000355, guid: cf65736f34b685345bfd059ede31b068, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -19884,6 +20046,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: 5573640982996397181, guid: cf65736f34b685345bfd059ede31b068, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573640982996397181, guid: cf65736f34b685345bfd059ede31b068, type: 3}
       propertyPath: tenlualnewtime
       value: 10
       objectReference: {fileID: 0}
@@ -19919,6 +20085,10 @@ PrefabInstance:
       propertyPath: Icon_Shields
       value: 
       objectReference: {fileID: 137862718}
+    - target: {fileID: 6442116418422393107, guid: cf65736f34b685345bfd059ede31b068, type: 3}
+      propertyPath: number_shields
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6442116418422393107, guid: cf65736f34b685345bfd059ede31b068, type: 3}
       propertyPath: NewTimeCreatedShields
       value: 10
@@ -20190,6 +20360,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -4709405222940722071, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4709405222940722071, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: tenlualnewtime
       value: 10
       objectReference: {fileID: 0}
@@ -20227,7 +20401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1317355404303999402, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: rotationSpeed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -1317355404303999402, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: tenlualnewtime
@@ -20333,6 +20507,14 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5153838456081868920, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153838456081868920, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5942607901365537019, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: m_Name
       value: planes_0
@@ -20378,6 +20560,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7754371598728851664, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754371598728851664, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: tenlualnewtime
       value: 5
       objectReference: {fileID: 0}
@@ -20414,6 +20600,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 137862718}
     - target: {fileID: 7815478430491848309, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: number_shields
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815478430491848309, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: Notification_icon_Shields
       value: 
       objectReference: {fileID: 1687110078}
@@ -20437,6 +20627,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 7948313165731429462, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7948313165731429462, guid: 551b2f59f905b164f9c135bee71d8ea4, type: 3}
       propertyPath: tenlualnewtime
       value: 15
@@ -21633,6 +21827,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -1312679087206818695, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1312679087206818695, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -21660,6 +21858,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -626395800597252833, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -626395800597252833, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -21725,6 +21927,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: 5183542177843927341, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183542177843927341, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
       propertyPath: tenlualnewtime
       value: 15
       objectReference: {fileID: 0}
@@ -21756,6 +21962,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 5190400462426385646, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5190400462426385646, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
       propertyPath: tenlualnewtime
       value: 10
@@ -21796,6 +22006,10 @@ PrefabInstance:
       propertyPath: Icon_Shields
       value: 
       objectReference: {fileID: 137862718}
+    - target: {fileID: 7552535811464390284, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
+      propertyPath: number_shields
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7552535811464390284, guid: 378a46709bda461458bf75a23221d8e2, type: 3}
       propertyPath: Notification_icon_Shields
       value: 
@@ -22509,6 +22723,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -5402651808040334427, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5402651808040334427, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
       propertyPath: tenlualnewtime
       value: 15
       objectReference: {fileID: 0}
@@ -22548,6 +22766,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 720810194346209571, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 720810194346209571, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
       propertyPath: Notification_icon
       value: 
@@ -22641,6 +22863,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: 5920405041051852771, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5920405041051852771, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
       propertyPath: tenlualnewtime
       value: 10
       objectReference: {fileID: 0}
@@ -22708,6 +22934,14 @@ PrefabInstance:
       propertyPath: tenlua
       value: 
       objectReference: {fileID: 400796886674920653, guid: 5a66e936879559c4c8ffec1416f9586f, type: 3}
+    - target: {fileID: 7655349248735243937, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
+      propertyPath: game_over
+      value: 
+      objectReference: {fileID: 1911267338}
+    - target: {fileID: 7655349248735243937, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7655349248735243937, guid: c8f1ce274cc673344ad409fbb6f2e3e4, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -23031,6 +23265,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -6811249020143659052, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6811249020143659052, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -23059,6 +23297,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -4445595668502907463, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4445595668502907463, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
       propertyPath: tenlualnewtime
       value: 10
       objectReference: {fileID: 0}
@@ -23082,6 +23324,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 226528561842526292, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 226528561842526292, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -23171,6 +23417,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 137862718}
     - target: {fileID: 5490630763196129658, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
+      propertyPath: number_shields
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490630763196129658, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
       propertyPath: NewTimeCreatedShields
       value: 10
       objectReference: {fileID: 0}
@@ -23198,6 +23448,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 5810929053003008848, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5810929053003008848, guid: 4f4c6aad3d70f8e4f937c0eda6d92c7a, type: 3}
       propertyPath: tenlualnewtime
       value: 15
@@ -23375,6 +23629,10 @@ PrefabInstance:
     - target: {fileID: 8427861137983124033, guid: f0386b48ed0d65046909b5c3f2485280, type: 3}
       propertyPath: m_Name
       value: icons_star
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427861137983124033, guid: f0386b48ed0d65046909b5c3f2485280, type: 3}
+      propertyPath: m_TagString
+      value: icon_star
       objectReference: {fileID: 0}
     - target: {fileID: 8537771226401969160, guid: f0386b48ed0d65046909b5c3f2485280, type: 3}
       propertyPath: listStar
@@ -24171,6 +24429,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -5529173851488478073, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5529173851488478073, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
       propertyPath: tenlualnewtime
       value: 15
       objectReference: {fileID: 0}
@@ -24203,6 +24465,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -2423327543810672610, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2423327543810672610, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -24230,6 +24496,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 398711377731028611, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 398711377731028611, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
       propertyPath: tenlualnewtime
       value: 10
@@ -24274,6 +24544,10 @@ PrefabInstance:
       propertyPath: Icon_Shields
       value: 
       objectReference: {fileID: 137862718}
+    - target: {fileID: 3659794722423766961, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
+      propertyPath: number_shields
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3659794722423766961, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
       propertyPath: NewTimeCreatedShields
       value: 10
@@ -24330,6 +24604,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 7044397343723373528, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7044397343723373528, guid: c69e4948dc5ea3b4e969ef311963ffd3, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -24697,6 +24975,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -4152165887365972105, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4152165887365972105, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
       propertyPath: tenlualnewtime
       value: 15
       objectReference: {fileID: 0}
@@ -24720,6 +25002,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -3522121535284006255, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -3522121535284006255, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
       propertyPath: tenlualnewtime
       value: 3
@@ -24748,6 +25034,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: -2139090058037834774, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -2139090058037834774, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
       propertyPath: tenlualnewtime
       value: 10
@@ -24780,6 +25070,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 1777201862522177165, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1777201862522177165, guid: 1bb80d0b68552b147955e3af9a2bcca0, type: 3}
       propertyPath: tenlualnewtime
       value: 5
@@ -24999,6 +25293,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -8970701085784372535, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8970701085784372535, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -25023,6 +25321,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: -7816947019662759583, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7816947019662759583, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -25046,6 +25348,10 @@ PrefabInstance:
       propertyPath: Icon_Shields
       value: 
       objectReference: {fileID: 137862718}
+    - target: {fileID: -4311911494291132261, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
+      propertyPath: number_shields
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4311911494291132261, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
       propertyPath: NewTimeCreatedShields
       value: 10
@@ -25159,6 +25465,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911267338}
     - target: {fileID: 8045120125999811496, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045120125999811496, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
       propertyPath: Notification_icon
       value: 
       objectReference: {fileID: 617836641}
@@ -25186,6 +25496,10 @@ PrefabInstance:
       propertyPath: game_over
       value: 
       objectReference: {fileID: 1911267338}
+    - target: {fileID: 9191638053754346823, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
+      propertyPath: rotationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9191638053754346823, guid: 9808d61cd0ba4ce448e7d84183c07e5c, type: 3}
       propertyPath: tenlualnewtime
       value: 15

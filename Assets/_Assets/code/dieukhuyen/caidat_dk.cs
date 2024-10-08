@@ -50,7 +50,16 @@ public class caidat_dk : MonoBehaviour
 
     void Update()
     {
-
+       if(amthanh)
+        {
+           volumeFalse();
+          
+        }
+        else
+        {
+            volumeTrue();
+        }
+        amthanh = (datacaidat.Data_caidat_play.amthanh_cd == 0) ? true : false;
     }
 
 
@@ -94,6 +103,7 @@ public class caidat_dk : MonoBehaviour
             amthanh = false;
             ing_amthanh_false.SetActive(true);
             ing_amthanh_true.SetActive(false);
+          
 
         }
         else
@@ -101,10 +111,11 @@ public class caidat_dk : MonoBehaviour
             amthanh = true;
             ing_amthanh_false.SetActive(false);
             ing_amthanh_true.SetActive(true);
+          
         }
         datacaidat.Data_caidat_play.amthanh_cd = (amthanh == true) ? 1 : 0;
         datacaidat.Savecaidat();
-        datacaidat.Loadcaidat();
+      
     }
 
     // Hàm điều khiển player
@@ -174,7 +185,7 @@ public class caidat_dk : MonoBehaviour
             ing_rung_false.SetActive(false);
             ing_rung_true.SetActive(true);
         }
-        datacaidat.Data_caidat_play.rung_cd = (amthanh == true) ? 1 : 0;
+        datacaidat.Data_caidat_play.rung_cd = (rung == true) ? 1 : 0;
         datacaidat.Savecaidat();
         datacaidat.Loadcaidat();
     }
@@ -182,5 +193,21 @@ public class caidat_dk : MonoBehaviour
     public void dieukhoan()
     {
 
+    }
+    public void volumeTrue()
+    {
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            audioSource.enabled = true;
+        }
+    }
+    public void volumeFalse()
+    {
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            audioSource.enabled = false;
+        }
     }
 }

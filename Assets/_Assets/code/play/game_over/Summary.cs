@@ -11,7 +11,7 @@ public class Summary : MonoBehaviour
   public int point_rockets;
     public int point_accelerate;
     public int point_shield;
-
+    public int point_Destruction;
 
     public int Summary_gameplay;
   
@@ -54,6 +54,7 @@ public class Summary : MonoBehaviour
             point_rockets = 0;
             point_shield = 0;
             point_accelerate = 0;
+            point_Destruction = 0;
         }
 
 

@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 public class ten_lua_run : MonoBehaviour
 {
     public GameObject tenlua;
-    public float rotationSpeed = 1f;
+    public float rotationSpeed = 2f;
     private GameObject newtenlua;
     public float tenlualnewtime = 5f;
     float m_tenluanewtime;
@@ -111,7 +111,7 @@ public class ten_lua_run : MonoBehaviour
             newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
             Destroy(newvuno, 1.8f);
             Invoke("ActivateGameOver", 1f);
-            Destroy(gameObject, 1.2f);
+            Destroy(gameObject, 1.5f);
            
           
           
