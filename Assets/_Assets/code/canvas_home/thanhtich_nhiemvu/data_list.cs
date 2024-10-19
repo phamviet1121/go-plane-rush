@@ -84,4 +84,5 @@ public class data_list : MonoBehaviour
 public class SaveQuestDataList
 {
     public List<save_quest> ListString;
+
 }

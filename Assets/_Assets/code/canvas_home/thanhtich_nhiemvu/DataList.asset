@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: 0
     anh_img: {fileID: -1643969271, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Long-liver
-    tiendo_txt: 0
+    tiendo_txt: 1
     tiendo_hoanthanh_txt: 3
     thongtin_nv_txt: minutes
     thuong_sao_txt: 100
@@ -149,7 +149,7 @@ MonoBehaviour:
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 350
     trangthai_txt: CHUAHOANTHANH
-  - id: 12
+  - id: 17
     anh_img: {fileID: 867960514, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Instant death
     tiendo_txt: 0
