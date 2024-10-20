@@ -251,4 +251,203 @@ public class update_quest : MonoBehaviour
         //    FindObjectOfType<view_quest>().CapNhatGiaoDien(data.id);
         //}
     }
+
+
+    //RESET
+    public void OnRESETClick()
+    {
+        //int a = int.Parse(idd.text);
+        foreach (var data in quest_list.dataquestslist)
+        {
+            
+            if (data.ten_nhienvu_txt == "Long-liver")
+            {
+              
+                    data.tiendo_txt = "0";
+                
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+
+                }
+            }
+
+
+            if (data.ten_nhienvu_txt == "Fighter")
+            {
+
+                data.tiendo_txt = "0";
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+
+                }
+            }
+
+
+
+
+            if (data.ten_nhienvu_txt == "Treasurer")
+            {
+                data.tiendo_txt = "0";
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+
+                }
+            }
+
+
+
+            if (data.ten_nhienvu_txt == "Flash")
+            {
+                data.tiendo_txt = "0";
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+                    //Debug.Log("dahoanthanh");
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+                    //Debug.Log("CHUA HOAN THANH DAU");
+                }
+            }
+
+
+            if (data.ten_nhienvu_txt == "Toughie")
+            {
+                data.tiendo_txt = "0";
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+                    //  Debug.Log("dahoanthanh");
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+                    //   Debug.Log("CHUA HOAN THANH DAU");
+                }
+            }
+            if (data.ten_nhienvu_txt == "Instant death")
+            {
+                data.tiendo_txt = "0";
+
+                if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
+                {
+                    data.tiendo_txt = data.tiendo_hoanthanh_txt;
+                    // Debug.Log("dahoanthanh");
+                    if (data.trangthai_txt != "danhan")
+                    {
+                        data.trangthai_txt = "dahoanthanh";
+                        if (data.trangthai_txt == "dahoanthanh")
+                        {
+                            list_sao.save_int_sao += int.Parse(data.thuong_sao_txt);
+                            list_sao.save_sao();
+                            list_sao.load_sao();
+                            data.trangthai_txt = "danhan";
+                        }
+                    }
+
+
+                }
+                else
+                {
+                    data.trangthai_txt = "CHUAHOANTHANH";
+                    // Debug.Log("CHUA HOAN THANH DAU");
+                }
+            }
+
+
+
+        }
+        datalist.save();
+
+       
+    }
 }

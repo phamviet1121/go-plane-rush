@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: 0
     anh_img: {fileID: -1643969271, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Long-liver
-    tiendo_txt: 1
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 3
     thongtin_nv_txt: minutes
     thuong_sao_txt: 100
@@ -31,8 +31,8 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 2
     anh_img: {fileID: -1777785936, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treqsurer
-    tiendo_txt: 1
+    ten_nhienvu_txt: Treasurer
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 150
     thongtin_nv_txt: stars
     thuong_sao_txt: 150
@@ -79,7 +79,7 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 8
     anh_img: {fileID: -246968058, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Trequrer
+    ten_nhienvu_txt: Treasurer
     tiendo_txt: 0
     tiendo_hoanthanh_txt: 1500
     thongtin_nv_txt: stars
@@ -127,7 +127,7 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 14
     anh_img: {fileID: 1070242758, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treqsurer
+    ten_nhienvu_txt: Treasurer
     tiendo_txt: 0
     tiendo_hoanthanh_txt: 5000
     thongtin_nv_txt: stars

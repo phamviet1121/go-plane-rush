@@ -294,7 +294,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 75540088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 471275727}
+        m_TargetAssemblyTypeName: update_quest, Assembly-CSharp
+        m_MethodName: OnRESETClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1183046458}
+        m_TargetAssemblyTypeName: view_quest, Assembly-CSharp
+        m_MethodName: LoadLaiTatCa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 674025150}
+        m_TargetAssemblyTypeName: view_player, Assembly-CSharp
+        m_MethodName: RESET_PLANE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1556845156}
+        m_TargetAssemblyTypeName: caidat_dk, Assembly-CSharp
+        m_MethodName: offclickReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &75540088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3875,7 +3923,7 @@ MonoBehaviour:
   - id: 0
     anh_img: {fileID: -1643969271, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Long-liver
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 3
     thongtin_nv_txt: minutes
     thuong_sao_txt: 100
@@ -3890,8 +3938,8 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 2
     anh_img: {fileID: -1777785936, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treqsurer
-    tiendo_txt: 1
+    ten_nhienvu_txt: Treasurer
+    tiendo_txt: 0
     tiendo_hoanthanh_txt: 150
     thongtin_nv_txt: stars
     thuong_sao_txt: 150
@@ -3899,7 +3947,7 @@ MonoBehaviour:
   - id: 3
     anh_img: {fileID: -646394052, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 0
+    tiendo_txt: 1
     tiendo_hoanthanh_txt: 50
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 100
@@ -3907,7 +3955,7 @@ MonoBehaviour:
   - id: 4
     anh_img: {fileID: 1529694265, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 50
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 100
@@ -3915,7 +3963,7 @@ MonoBehaviour:
   - id: 5
     anh_img: {fileID: -705302426, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Instant death
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 50
     thongtin_nv_txt: destrction bonuses
     thuong_sao_txt: 100
@@ -3923,7 +3971,7 @@ MonoBehaviour:
   - id: 6
     anh_img: {fileID: 1189686182, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Long-liver
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 7
     thongtin_nv_txt: minutes
     thuong_sao_txt: 250
@@ -3938,7 +3986,7 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 8
     anh_img: {fileID: -246968058, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Trequrer
+    ten_nhienvu_txt: Treasurer
     tiendo_txt: 0
     tiendo_hoanthanh_txt: 1500
     thongtin_nv_txt: stars
@@ -3947,7 +3995,7 @@ MonoBehaviour:
   - id: 9
     anh_img: {fileID: -2064032417, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 0
+    tiendo_txt: 1
     tiendo_hoanthanh_txt: 250
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 200
@@ -3955,7 +4003,7 @@ MonoBehaviour:
   - id: 10
     anh_img: {fileID: -1934627256, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 200
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 200
@@ -3963,7 +4011,7 @@ MonoBehaviour:
   - id: 11
     anh_img: {fileID: -2249639, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Instant death
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 200
     thongtin_nv_txt: destruction nomuses
     thuong_sao_txt: 200
@@ -3971,7 +4019,7 @@ MonoBehaviour:
   - id: 12
     anh_img: {fileID: 575548401, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Long-liver
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 12
     thongtin_nv_txt: minutes
     thuong_sao_txt: 1000
@@ -3986,7 +4034,7 @@ MonoBehaviour:
     trangthai_txt: CHUAHOANTHANH
   - id: 14
     anh_img: {fileID: 1070242758, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
-    ten_nhienvu_txt: Treqsurer
+    ten_nhienvu_txt: Treasurer
     tiendo_txt: 0
     tiendo_hoanthanh_txt: 5000
     thongtin_nv_txt: stars
@@ -3995,7 +4043,7 @@ MonoBehaviour:
   - id: 15
     anh_img: {fileID: 531744076, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Flash
-    tiendo_txt: 0
+    tiendo_txt: 1
     tiendo_hoanthanh_txt: 500
     thongtin_nv_txt: speed bonuses
     thuong_sao_txt: 350
@@ -4003,15 +4051,15 @@ MonoBehaviour:
   - id: 16
     anh_img: {fileID: 805394296, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Toughie
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 500
     thongtin_nv_txt: armor bonuses
     thuong_sao_txt: 350
     trangthai_txt: CHUAHOANTHANH
-  - id: 12
+  - id: 17
     anh_img: {fileID: 867960514, guid: 4fc7e27cd780d2e4aaa4f40fc279ca8d, type: 3}
     ten_nhienvu_txt: Instant death
-    tiendo_txt: 0
+    tiendo_txt: 2
     tiendo_hoanthanh_txt: 500
     thongtin_nv_txt: destrction bonuses
     thuong_sao_txt: 300
@@ -5175,7 +5223,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 541699493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1556845156}
+        m_TargetAssemblyTypeName: caidat_dk, Assembly-CSharp
+        m_MethodName: offclickReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &541699493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6361,58 +6421,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save_listdataplayer:
   - id: 0
-    tocdo: 5
+    tocdo: 12
     tocdoquay: 5
-    giap: 5
-    gia: 555
+    giap: 0
+    gia: 0
     trangthaisohuu: 1
   - id: 1
-    tocdo: 6
+    tocdo: 12
     tocdoquay: 6
-    giap: 6
-    gia: 666
-    trangthaisohuu: 1
+    giap: 0
+    gia: 400
+    trangthaisohuu: 0
   - id: 2
-    tocdo: 7
-    tocdoquay: 7
-    giap: 7
-    gia: 777
-    trangthaisohuu: 0
-  - id: 3
-    tocdo: 8
-    tocdoquay: 8
-    giap: 8
-    gia: 888
-    trangthaisohuu: 0
-  - id: 4
-    tocdo: 3
-    tocdoquay: 3
-    giap: 3
-    gia: 333
-    trangthaisohuu: 0
-  - id: 5
-    tocdo: 9
-    tocdoquay: 9
-    giap: 9
-    gia: 999
-    trangthaisohuu: 0
-  - id: 6
-    tocdo: 10
-    tocdoquay: 10
-    giap: 10
+    tocdo: 13
+    tocdoquay: 5
+    giap: 1
     gia: 1000
     trangthaisohuu: 0
+  - id: 3
+    tocdo: 14
+    tocdoquay: 5
+    giap: 1
+    gia: 2200
+    trangthaisohuu: 0
+  - id: 4
+    tocdo: 14
+    tocdoquay: 6
+    giap: 2
+    gia: 3500
+    trangthaisohuu: 0
+  - id: 5
+    tocdo: 15
+    tocdoquay: 7
+    giap: 2
+    gia: 6000
+    trangthaisohuu: 0
+  - id: 6
+    tocdo: 17
+    tocdoquay: 6
+    giap: 3
+    gia: 8000
+    trangthaisohuu: 0
   - id: 7
-    tocdo: 11
-    tocdoquay: 11
-    giap: 11
-    gia: 1111
-    trangthaisohuu: 1
+    tocdo: 17
+    tocdoquay: 7
+    giap: 4
+    gia: 10000
+    trangthaisohuu: 0
   - id: 8
-    tocdo: 12
-    tocdoquay: 12
-    giap: 12
-    gia: 1212
+    tocdo: 13
+    tocdoquay: 5
+    giap: 2
+    gia: 5000
     trangthaisohuu: 0
 --- !u!4 &682167199 stripped
 Transform:
@@ -11612,7 +11672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.43, y: -0.95}
+  m_AnchoredPosition: {x: 27.8, y: -0.95}
   m_SizeDelta: {x: 24.74, y: 24.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289316173

@@ -86,4 +86,26 @@ public class view_player : MonoBehaviour
         }
         trangthaiplay();
     }
+
+    public void RESET_PLANE()
+    {
+      
+        uploadRESET_play();
+        listplayer.save_list_player();
+        listplayer.load_list_player();
+    }
+    public void uploadRESET_play()
+    {
+        foreach (var data in listplayer.save_listdataplayer)
+        {
+            if (data.id != 0)
+            {
+               
+                data.trangthaisohuu = false;
+                trangthai = data.trangthaisohuu;
+                trangthaiplay(); 
+            }
+        }
+        
+    }
 }

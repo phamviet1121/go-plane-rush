@@ -169,7 +169,10 @@ public class caidat_dk : MonoBehaviour
     {
         reset.SetActive(true);
     }
-
+    public void offclickReset()
+    {
+        reset.SetActive(false);
+    }
 
     public void onclickrung()
     {
