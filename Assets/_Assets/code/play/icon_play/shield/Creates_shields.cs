@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.FilePathAttribute;
+//using static UnityEditor.FilePathAttribute;
 
 public class Creates_shields : MonoBehaviour
 {
 
     public GameObject Icon_Shields;
     private GameObject newIcon_Shields;
-    //public Transform player;
+   
     public float TimeCreatedShields;
     public float NewTimeCreatedShields = 20f;
     public float number_shields ;
@@ -111,22 +111,22 @@ public class Creates_shields : MonoBehaviour
                               screenPoint.x > 0 && screenPoint.x < Screen.width &&
                               screenPoint.y > 0 && screenPoint.y < Screen.height;
 
-        // Nếu 'dich' nằm ngoài canvas, hiện thông báo
+      
         if (!isWithinCanvas)
         {
-            NewNotification_Icon_Shields.SetActive(true); // Hiện thông báo
-            // Chuyển từ Screen Space sang Canvas Space
+            NewNotification_Icon_Shields.SetActive(true); 
+          
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 canvasRect,
                 screenPoint,
                 canvas.worldCamera,
                 out Vector2 localPoint);
 
-            // Tính toán vị trí của thông báo ở biên canvas
+            
             localPoint.x = Mathf.Clamp(localPoint.x, -canvasWidth / 2 + padding, canvasWidth / 2 - padding);
             localPoint.y = Mathf.Clamp(localPoint.y, -canvasHeight / 2 + padding, canvasHeight / 2 - padding);
 
-            // Đặt lại vị trí của thông báo trên biên của canvas
+            
             RectTransform thongbaoRect = NewNotification_Icon_Shields.GetComponent<RectTransform>();
             thongbaoRect.anchoredPosition = localPoint;
            

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditorInternal.VersionControl.ListControl;
+//using static UnityEditorInternal.VersionControl.ListControl;
 
 public class collideStar_player : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class collideStar_player : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         Destroy(gameObject, Star_lifetime);
