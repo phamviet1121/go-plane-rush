@@ -687,6 +687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dam_may_(8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777674728834794976, guid: 6a7af20d0dac09a4f85987f98a231011, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
