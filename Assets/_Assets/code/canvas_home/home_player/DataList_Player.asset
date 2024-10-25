@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670f8f216d16f84f9aa20f4e4dd680f, type: 3}
+  m_Name: DataList_Player
+  m_EditorClassIdentifier: 
+  DataQuestListPlayer:
+  - id: 0
+    tocdo: 12
+    tocdoquay: 5
+    giap: 0
+    gia: 0
+    trangthaisohuu: 1
+  - id: 1
+    tocdo: 12
+    tocdoquay: 6
+    giap: 0
+    gia: 400
+    trangthaisohuu: 0
+  - id: 2
+    tocdo: 13
+    tocdoquay: 5
+    giap: 1
+    gia: 1000
+    trangthaisohuu: 0
+  - id: 3
+    tocdo: 14
+    tocdoquay: 5
+    giap: 1
+    gia: 2200
+    trangthaisohuu: 0
+  - id: 4
+    tocdo: 14
+    tocdoquay: 6
+    giap: 2
+    gia: 3500
+    trangthaisohuu: 1
+  - id: 5
+    tocdo: 15
+    tocdoquay: 7
+    giap: 2
+    gia: 6000
+    trangthaisohuu: 0
+  - id: 6
+    tocdo: 17
+    tocdoquay: 6
+    giap: 3
+    gia: 8000
+    trangthaisohuu: 0
+  - id: 7
+    tocdo: 17
+    tocdoquay: 7
+    giap: 4
+    gia: 10000
+    trangthaisohuu: 0
+  - id: 8
+    tocdo: 13
+    tocdoquay: 5
+    giap: 2
+    gia: 5000
+    trangthaisohuu: 0

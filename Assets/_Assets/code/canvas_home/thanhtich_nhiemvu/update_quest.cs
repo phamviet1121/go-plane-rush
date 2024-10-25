@@ -244,7 +244,7 @@ public class update_quest : MonoBehaviour
 
 
         }
-        datalist.save();
+       // datalist.save();
        
         //foreach (var data in quest_list.dataquestslist)
         //{
@@ -446,7 +446,7 @@ public class update_quest : MonoBehaviour
 
 
         }
-        datalist.save();
+       // datalist.save();
 
        
     }

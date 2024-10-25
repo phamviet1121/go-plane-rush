@@ -50,14 +50,28 @@ public class Summary : MonoBehaviour
 
         if (!game_over.activeSelf && !Dk_gameover.gameover) 
         {
+           
             point_star = 0;
             point_rockets = 0;
             point_shield = 0;
             point_accelerate = 0;
             point_Destruction = 0;
+            Debug.Log("có reset ko ha  ");
         }
 
+        //Debug.Log($"game_over.activeSel=  {game_over.activeSelf},,Dk_gameover.gameover={Dk_gameover.gameover}");
+    }
+    public void datlai()
+    {
+       
+
+            point_star = 0;
+            point_rockets = 0;
+            point_shield = 0;
+            point_accelerate = 0;
+            point_Destruction = 0;
+           // Debug.Log("có reset ko  (datlai)");
+        
 
     }
-
 }

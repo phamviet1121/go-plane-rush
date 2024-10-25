@@ -10,7 +10,7 @@ public class collision_shield : MonoBehaviour
         {
 
             Destroy(gameObject);
-            Debug.Log("da xoa chua");
+           // Debug.Log("da xoa chua");
             Destroy(collision.gameObject);
 
         }

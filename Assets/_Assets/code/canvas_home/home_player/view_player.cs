@@ -9,7 +9,7 @@ public class view_player : MonoBehaviour
     public Text tocdoquay_txt;
     public Text giap_txt;
     public Text gia_txt;
-    public list_player listplayer;
+   // public list_player listplayer;
 
     public home_dk homedk;
 
@@ -19,16 +19,44 @@ public class view_player : MonoBehaviour
     public GameObject buy;
     bool trangthai;
     int giasao;
+
+    ///
+    public quest_list_player Quest_list_player;
+   
+    //public get_data_Player get_Quest;
+    //public Transform location;
+    //public GameObject sample;
+    ////
+    //private Dictionary<int, get_data_Player> questDictionaryy = new Dictionary<int, get_data_Player>();
+
+
     public void Start()
     {
-        listplayer.load_list_player();
+        
         listsao.load_sao();
         load_dataplayerview();
+        //
+
+        //foreach (var data in Quest_list_player.DataQuestListPlayer)
+        //{
+
+        //    create_something_new(data);
+        //}
+        //sample.SetActive(false);
 
     }
+
+
+    //public void create_something_new (data_quet_player data_quet_player)
+    //{
+    //    var quest = Instantiate(get_Quest, location);
+    //    quest.Setdata(data_quet_player);
+    //    questDictionaryy[data_quet_player.id] = quest;
+    //}
+
     public void load_dataplayerview()
     {
-        foreach (var data in listplayer.save_listdataplayer)
+        foreach (var data in Quest_list_player.DataQuestListPlayer)
         {
 
             if (data.id == homedk.id)
@@ -69,14 +97,14 @@ public class view_player : MonoBehaviour
             upload_play();
             listsao.save_sao();
             listsao.load_sao();
-            listplayer.save_list_player();
-            listplayer.load_list_player();
+            //listplayer.save_list_player();
+            //listplayer.load_list_player();
         }
        
     }
     public void upload_play()
     {
-        foreach (var data in listplayer.save_listdataplayer)
+        foreach (var data in Quest_list_player.DataQuestListPlayer)
         {
 
             if (data.id == homedk.id)
@@ -91,12 +119,12 @@ public class view_player : MonoBehaviour
     {
       
         uploadRESET_play();
-        listplayer.save_list_player();
-        listplayer.load_list_player();
+        //listplayer.save_list_player();
+        //listplayer.load_list_player();
     }
     public void uploadRESET_play()
     {
-        foreach (var data in listplayer.save_listdataplayer)
+        foreach (var data in Quest_list_player.DataQuestListPlayer)
         {
             if (data.id != 0)
             {

@@ -44,7 +44,7 @@ public class Dk_gameover : MonoBehaviour
         update.OnCapnhatClick();
 
         dk.SetActive(true);
-
+        summary.datlai();
         game_over.SetActive(false);
         HomeDK.viewplayer(HomeDK.id);
         Time.timeScale = 1f;
@@ -62,6 +62,7 @@ public class Dk_gameover : MonoBehaviour
         play.SetActive(false);
         macdinh.SetActive(true);
         home.SetActive(true);
+        summary.datlai();
         game_over.SetActive(false);
         HomeDK.viewplayer(HomeDK.id);
 

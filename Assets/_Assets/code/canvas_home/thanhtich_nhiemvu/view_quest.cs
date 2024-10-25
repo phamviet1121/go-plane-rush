@@ -13,7 +13,7 @@ public class view_quest : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        Ddatalist.LoadAll();
+       // Ddatalist.LoadAll();
         foreach (var data in Quest_list.dataquestslist)
         {
 
