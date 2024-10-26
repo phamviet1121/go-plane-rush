@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class view_player : MonoBehaviour
 {
-    public Text tocdo_txt;
-    public Text tocdoquay_txt;
-    public Text giap_txt;
-    public Text gia_txt;
+    public TextMeshProUGUI tocdo_txt;
+    public TextMeshProUGUI tocdoquay_txt;
+    public TextMeshProUGUI giap_txt;
+    public TextMeshProUGUI gia_txt;
    // public list_player listplayer;
 
     public home_dk homedk;
