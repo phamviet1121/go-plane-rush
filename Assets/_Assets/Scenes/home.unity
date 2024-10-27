@@ -1911,7 +1911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9504601, y: 0.13129848}
   m_AnchorMax: {x: 0.9504601, y: 0.13129848}
-  m_AnchoredPosition: {x: -9.358093, y: 211.84998}
+  m_AnchoredPosition: {x: -9.358032, y: 211.84998}
   m_SizeDelta: {x: 146.63, y: 147.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &229491908
@@ -12976,7 +12976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.052, y: 0.13129848}
   m_AnchorMax: {x: 0.052, y: 0.13129848}
-  m_AnchoredPosition: {x: 7.304016, y: 211.41003}
+  m_AnchoredPosition: {x: 7.304077, y: 211.41003}
   m_SizeDelta: {x: 147.19, y: 147.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293771559
@@ -17287,6 +17287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Details_txt: {fileID: 1819945780}
+  leaderboardButton: {fileID: 1211456565}
 --- !u!1 &1786727087
 GameObject:
   m_ObjectHideFlags: 0
