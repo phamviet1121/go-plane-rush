@@ -13,6 +13,14 @@ public class view_quest : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        Ddatalist.load_onestart();
+
+        if (Ddatalist.onestart!=0)
+        {
+            Ddatalist.LoadAll();
+            Debug.Log("co load ko ");
+        }    
+
        // Ddatalist.LoadAll();
         foreach (var data in Quest_list.dataquestslist)
         {

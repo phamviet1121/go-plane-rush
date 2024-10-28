@@ -58,7 +58,7 @@ public class update_quest : MonoBehaviour
                 if (int.Parse(data.tiendo_txt.ToString()) >= int.Parse(data.tiendo_hoanthanh_txt.ToString()))
                 {
                     data.tiendo_txt = data.tiendo_hoanthanh_txt;
-                   
+
                     if (data.trangthai_txt != "danhan")
                     {
                         data.trangthai_txt = "dahoanthanh";
@@ -76,7 +76,7 @@ public class update_quest : MonoBehaviour
                 else
                 {
                     data.trangthai_txt = "CHUAHOANTHANH";
-                   
+
                 }
             }
 
@@ -110,6 +110,7 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                   
                 }
+               
             }
 
 
@@ -144,6 +145,7 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                   
                 }
+               
             }
 
 
@@ -177,6 +179,7 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                     //Debug.Log("CHUA HOAN THANH DAU");
                 }
+                
             }
 
 
@@ -209,6 +212,7 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                  //   Debug.Log("CHUA HOAN THANH DAU");
                 }
+               
             }
             if (data.ten_nhienvu_txt == "Instant death")
             {
@@ -239,13 +243,20 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                    // Debug.Log("CHUA HOAN THANH DAU");
                 }
+                datalist.onestart = 1;
+                datalist.save_onestart();
+                datalist.load_onestart();
+                datalist.save();
             }
            
 
 
         }
-       // datalist.save();
-       
+        datalist.onestart = 1;
+        datalist.save_onestart();
+        datalist.load_onestart();
+        datalist.save();
+
         //foreach (var data in quest_list.dataquestslist)
         //{
         //    FindObjectOfType<view_quest>().CapNhatGiaoDien(data.id);
@@ -441,13 +452,17 @@ public class update_quest : MonoBehaviour
                     data.trangthai_txt = "CHUAHOANTHANH";
                     // Debug.Log("CHUA HOAN THANH DAU");
                 }
+               
             }
 
 
 
         }
-       // datalist.save();
-
+        datalist.onestart = 1;
+        datalist.save_onestart();
+        datalist.load_onestart();
+        datalist.save();
        
+
     }
 }

@@ -42,7 +42,7 @@ MonoBehaviour:
     tocdoquay: 6
     giap: 2
     gia: 3500
-    trangthaisohuu: 1
+    trangthaisohuu: 0
   - id: 5
     tocdo: 15
     tocdoquay: 7

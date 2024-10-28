@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,7 +22,8 @@ public class view_player : MonoBehaviour
 
     ///
     public quest_list_player Quest_list_player;
-   
+    public list_player list_player;
+
     //public get_data_Player get_Quest;
     //public Transform location;
     //public GameObject sample;
@@ -34,6 +35,14 @@ public class view_player : MonoBehaviour
     {
         
         listsao.load_sao();
+
+        list_player.load_onestartplayert();
+        if (list_player.onestartplayer!=0)
+        {
+            list_player.load_list_player();
+            Debug.Log("may co chay ko hả ");
+
+        }
         load_dataplayerview();
         //
 
@@ -97,6 +106,10 @@ public class view_player : MonoBehaviour
             upload_play();
             listsao.save_sao();
             listsao.load_sao();
+
+            list_player.onestartplayer = 1;
+            list_player.save_onestartplayer();
+
             //listplayer.save_list_player();
             //listplayer.load_list_player();
         }
@@ -112,6 +125,7 @@ public class view_player : MonoBehaviour
                 data.trangthaisohuu = true;
             }
         }
+        list_player.save_list_player();
         trangthaiplay();
     }
 
@@ -134,6 +148,8 @@ public class view_player : MonoBehaviour
                 trangthaiplay(); 
             }
         }
-        
+        list_player.onestartplayer = 1;
+        list_player.save_onestartplayer();
+        list_player.save_list_player();
     }
 }

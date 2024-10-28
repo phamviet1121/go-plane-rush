@@ -10,7 +10,19 @@ public class data_list : MonoBehaviour
 
     [SerializeField]
     public List<save_quest> saveDataQuest = new List<save_quest>();
-  
+    public int onestart;
+    [ContextMenu("save_onestart")]
+    public void save_onestart()
+    {
+        PlayerPrefs.SetInt(nameof(onestart), onestart);
+        PlayerPrefs.Save();
+    }
+    [ContextMenu("load_onestart")]
+    public void load_onestart()
+    {
+        onestart = PlayerPrefs.GetInt(nameof(onestart), 0);
+
+    }
     void Start()
     {
         
@@ -46,6 +58,8 @@ public class data_list : MonoBehaviour
     public void OnApplicationQuit()
     {
         save();
+        onestart++;
+        save_onestart();
     }
 
     [ContextMenu("LoadAll")]
