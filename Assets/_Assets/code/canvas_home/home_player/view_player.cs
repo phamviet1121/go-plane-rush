@@ -40,7 +40,7 @@ public class view_player : MonoBehaviour
         if (list_player.onestartplayer!=0)
         {
             list_player.load_list_player();
-            Debug.Log("may co chay ko hả ");
+           
 
         }
         load_dataplayerview();

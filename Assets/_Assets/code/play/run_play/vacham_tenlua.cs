@@ -27,6 +27,7 @@ public class vacham_tenlua : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             gameOver = true;
+
             //Destroy(collision.gameObject);
             Destroy(gameObject);
 
@@ -38,6 +39,12 @@ public class vacham_tenlua : MonoBehaviour
         {
             Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
             Destroy(gameObject);
+            newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
+            Destroy(newvuno, 1.8f);
+        }
+        if (collision.gameObject.CompareTag("Shields"))
+        {
+            Vector2 vitrino = new Vector2(transform.position.x, transform.position.y);
             newvuno = Instantiate(vuno, vitrino, Quaternion.identity);
             Destroy(newvuno, 1.8f);
         }

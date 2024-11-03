@@ -11,10 +11,29 @@ public class database_save_play_thanhtich : MonoBehaviour
     public int rocketsCollide;//tenlua-
     public int destructionCollide;//phahuy
     public Summary Summary;
-   
+    public int  savefloat_minutes;
+
+    [ContextMenu("save_sao")]
+    public void save_minutes()
+    {
+        PlayerPrefs.SetInt(nameof(savefloat_minutes), savefloat_minutes);
+        PlayerPrefs.Save();
+    }
+
+    private void OnApplicationQuit()
+    {
+        save_minutes();
+    }
+
+    [ContextMenu("load_sao")]
+    public void load_minutes()
+    {
+        savefloat_minutes = PlayerPrefs.GetInt(nameof(savefloat_minutes), 0);
+
+    }
     void Start()
     {
-       
+        load_minutes();
     }
 
     // Update is called once per frame
@@ -27,6 +46,12 @@ public class database_save_play_thanhtich : MonoBehaviour
         armorCollide= Summary.point_shield;
         rocketsCollide= Summary.point_rockets;
         destructionCollide = Summary.point_Destruction;
+        if(Summary.point_time / 60>= savefloat_minutes)
+        {
+            savefloat_minutes = Summary.point_time / 60;
+            save_minutes();
+            load_minutes();
+        }    
        // Debug.Log($"speedCollide= {speedCollide}");
         //Debug.Log($"armorCollide= {armorCollide}");
     }

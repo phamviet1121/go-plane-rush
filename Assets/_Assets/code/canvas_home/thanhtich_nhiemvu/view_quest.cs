@@ -18,7 +18,7 @@ public class view_quest : MonoBehaviour
         if (Ddatalist.onestart!=0)
         {
             Ddatalist.LoadAll();
-            Debug.Log("co load ko ");
+            
         }    
 
        // Ddatalist.LoadAll();

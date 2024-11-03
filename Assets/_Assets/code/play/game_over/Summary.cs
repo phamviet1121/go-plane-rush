@@ -40,9 +40,9 @@ public class Summary : MonoBehaviour
             point_time = (int)(Time_play.timeplay);
 
             point_time_txt.text = string.Format($"{(int)(point_time / 5)}"); 
-            point_star_txt.text = string.Format($"{(int)((point_time / 10) + point_rockets+ point_star + 1)}"); 
+            point_star_txt.text = string.Format($"{(int)( point_rockets+ point_star )}"); 
 
-            Summary_gameplay = (int)(point_time / 5) + (int)((point_time / 10) + point_star + 1); 
+            Summary_gameplay = (int)(point_time / 5) + (int)(point_rockets + point_star ); 
             Summary_txt.text = string.Format($"{Summary_gameplay}");
             point_quangcao.text = string.Format($" + {Summary_gameplay}");
             
