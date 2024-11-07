@@ -24,6 +24,7 @@ public class Summary : MonoBehaviour
     public Dk_gameover Dk_gameover;
     float Summary_time;
     public int Summary_savelist;
+    public bool onestrart=true;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,17 +36,18 @@ public class Summary : MonoBehaviour
     {
        
 
-        if (game_over.activeSelf) 
+        if (game_over.activeSelf&& onestrart) 
         {
+
             point_time = (int)(Time_play.timeplay);
 
-            point_time_txt.text = string.Format($"{(int)(point_time / 5)}"); 
-            point_star_txt.text = string.Format($"{(int)( point_rockets+ point_star )}"); 
+            point_time_txt.text = string.Format($"{(int)(point_time / 5)}");
+            point_star_txt.text = string.Format($"{(int)(point_rockets + point_star)}");
 
-            Summary_gameplay = (int)(point_time / 5) + (int)(point_rockets + point_star ); 
+            Summary_gameplay = (int)(point_time / 5) + (int)(point_rockets + point_star);
             Summary_txt.text = string.Format($"{Summary_gameplay}");
             point_quangcao.text = string.Format($" + {Summary_gameplay}");
-            
+            onestrart = false;
         }
 
         if (!game_over.activeSelf && !Dk_gameover.gameover) 
@@ -70,8 +72,14 @@ public class Summary : MonoBehaviour
             point_shield = 0;
             point_accelerate = 0;
             point_Destruction = 0;
+        onestrart = true;
            // Debug.Log("có reset ko  (datlai)");
-        
+
 
     }
+    public void gameoverright()
+    {
+        Summary_txt.text = string.Format($"{Summary_gameplay}");
+
+    }    
 }

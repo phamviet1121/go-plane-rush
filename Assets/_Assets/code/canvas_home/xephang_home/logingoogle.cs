@@ -14,7 +14,30 @@ public class logingoogle : MonoBehaviour
     public string Token;
     public string Error;
     public TextMeshProUGUI trangthaidangnhap;
+    public TextMeshProUGUI dex_text;
     // Start is called before the first frame update
+    private void Start()
+    {
+        singinn();
+    }
+    public void singinn()
+    {
+        PlayGamesPlatform.Instance.Authenticate(PA);
+    }
+    internal void PA(SignInStatus status)
+    {
+        if (status == SignInStatus.Success)
+        {
+            string name = PlayGamesPlatform.Instance.GetUserDisplayName();
+            dex_text.text = "tendangnhap:" + name;
+        }
+        else
+        {
+            dex_text.text = "loidangnhap";
+        }
+
+    }
+
     async void Awake()
     {
         try

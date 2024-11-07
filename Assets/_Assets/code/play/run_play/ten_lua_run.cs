@@ -122,6 +122,7 @@ public class ten_lua_run : MonoBehaviour
     void ActivateGameOver()
     {
         game_over.SetActive(true);
+       
         Time.timeScale = 0f;
 
 

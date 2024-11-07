@@ -13,10 +13,10 @@ public class playgamemanager : MonoBehaviour
     public Leaderboard leaderBoard;
 
     public TextMeshProUGUI runplaytimeText;
-   // public TextMeshProUGUI coinProgressText;
+    // public TextMeshProUGUI coinProgressText;
 
-    public int  runplaytime;
-   // public int  coinProgress;
+    public int runplaytime;
+    // public int  coinProgress;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +29,15 @@ public class playgamemanager : MonoBehaviour
 
     public void AddScore()
     {
+        Debug.Log($"database_save_play_thanhtich.savefloat_minutes: {database_save_play_thanhtich.savefloat_minutes}");
+        Debug.Log($"runplaytime: {runplaytime}");
+
         if (/*playerManager.score*/ database_save_play_thanhtich.savefloat_minutes > runplaytime)
         {
             runplaytime = /*playerManager.score*/ database_save_play_thanhtich.savefloat_minutes;
             SaveGameProgress();
             leaderBoard.SubmitScoreToLeaderboard(runplaytime);
+            Debug.Log($"chay leaderboard ko {runplaytime}");
         }
         UpdateUI();
     }
@@ -51,7 +55,7 @@ public class playgamemanager : MonoBehaviour
     public void UpdateUI()
     {
         runplaytimeText.text = runplaytime.ToString();
-       // coinProgressText.text = coinProgress.ToString();
+        // coinProgressText.text = coinProgress.ToString();
     }
 
     public void SaveGameProgress()
@@ -71,5 +75,6 @@ public class playgamemanager : MonoBehaviour
     {
         SaveGameProgress();
     }
+
 
 }
