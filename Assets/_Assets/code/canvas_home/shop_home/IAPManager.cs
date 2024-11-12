@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
@@ -50,46 +50,46 @@ public class IAPManager : MonoBehaviour
 
     public void OnPurchaseFailure(Product product, PurchaseFailureReason reason)
     {
-        // Gọi hàm hiển thị thông báo lỗi và truyền thêm tên sản phẩm
+        // G?i h�m hi?n th? th�ng b�o l?i v� truy?n th�m t�n s?n ph?m
         ShowPurchaseFailureMessage(product, reason);
     }
 
     private void ShowPurchaseFailureMessage(Product product, PurchaseFailureReason reason)
     {
-        string productName = product.definition.storeSpecificId; // Tên sản phẩm cụ thể
-        string message = $"Thanh toán cho sản phẩm '{productName}' thất bại. Vui lòng thử lại.";
+        string productName = product.definition.storeSpecificId; // T�n s?n ph?m c? th?
+        string message = $"Thanh to�n cho s?n ph?m '{productName}' th?t b?i. Vui l�ng th? l?i.";
 
-        // Đặt thông báo dựa trên lý do thất bại
+        // ??t th�ng b�o d?a tr�n l� do th?t b?i
         switch (reason)
         {
             case PurchaseFailureReason.PaymentDeclined:
-                message = $"Thanh toán cho sản phẩm '{productName}' bị từ chối. Vui lòng kiểm tra phương thức thanh toán.";
+                message = $"Thanh to�n cho s?n ph?m '{productName}' b? t? ch?i. Vui l�ng ki?m tra ph??ng th?c thanh to�n.";
                 break;
             case PurchaseFailureReason.PurchasingUnavailable:
-                message = $"Chức năng mua hàng cho sản phẩm '{productName}' hiện không khả dụng. Vui lòng thử lại sau.";
+                message = $"Ch?c n?ng mua h�ng cho s?n ph?m '{productName}' hi?n kh�ng kh? d?ng. Vui l�ng th? l?i sau.";
                 break;
             case PurchaseFailureReason.ExistingPurchasePending:
-                message = $"Đang có giao dịch chưa hoàn thành cho sản phẩm '{productName}'. Vui lòng chờ và thử lại.";
+                message = $"?ang c� giao d?ch ch?a ho�n th�nh cho s?n ph?m '{productName}'. Vui l�ng ch? v� th? l?i.";
                 break;
             case PurchaseFailureReason.UserCancelled:
-                message = $"Giao dịch cho sản phẩm '{productName}' đã bị hủy.";
+                message = $"Giao d?ch cho s?n ph?m '{productName}' ?� b? h?y.";
                 break;
             default:
-                message = $"Đã xảy ra lỗi khi mua sản phẩm '{productName}'. Vui lòng thử lại.";
+                message = $"?� x?y ra l?i khi mua s?n ph?m '{productName}'. Vui l�ng th? l?i.";
                 break;
         }
 
-        // Hiển thị thông báo lỗi lên màn hình
+        // Hi?n th? th�ng b�o l?i l�n m�n h�nh
         errorText.text = message;
         errorText.enabled = true;
 
-        // Tắt thông báo sau 3 giây
+        // T?t th�ng b�o sau 3 gi�y
         StartCoroutine(HideErrorTextAfterDelay(3f));
     }
 
     private IEnumerator HideErrorTextAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        errorText.enabled = false; // Ẩn thông báo sau khoảng thời gian đã đặt
+        errorText.enabled = false; // ?n th�ng b�o sau kho?ng th?i gian ?� ??t
     }
 }
